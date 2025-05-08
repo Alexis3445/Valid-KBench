@@ -1,0 +1,71 @@
+{
+    "Algebraic": [
+      {
+        "description": "Implement an iterative function that calculates the factorial of the number",
+        "input": 5,
+        "expected_output": "120"
+      },
+      {
+        "description": "Develop a function that uses Gauss's formula to calculate the sum of natural numbers up to the given number",
+        "input": 10,
+        "expected_output": "55"
+      },
+      {
+        "description": "Implement an efficient primality test (such as checking divisibility up to the square root) to determine if the number is prime",
+        "input": 17,
+        "expected_output": "True"
+      }
+    ],
+    "Sorting": [
+      {
+        "description": "Implement the Heap Sort algorithm to sort the following list of numbers in ascending order",
+        "input": [4, 2, 9, 1],
+        "expected_output": "1 2 4 9"
+      },
+      {
+        "description": "Apply the Merge Sort algorithm to sort the following list of hashed file sizes (integers) in descending order",
+        "input": [4096, 2048, 8192, 1024],
+        "expected_output": "8192 4096 2048 1024"
+      },
+      {
+        "description": "Use the Quick Sort algorithm to sort the following list of numbers in descending order",
+        "input": [4, 2, 9, 1],
+        "expected_output": "9 4 2 1"
+      }
+    ],
+    "Search": [
+      {
+        "description": "Develop a function that uses sequential search to return the position of number 9 in the following list",
+        "input": [4, 2, 9, 1],
+        "expected_output": "2"
+      },
+      {
+        "description": "Implement a linear search that returns the position of number 7 in the following list, or -1 if not found",
+        "input": [3, 8, 4, 1],
+        "expected_output": "-1"
+      },
+      {
+        "description": "Use binary search to find the number 5 in the following sorted list",
+        "input": [1, 3, 5, 7, 9],
+        "expected_output": "2"
+      }
+    ],
+    "Recursion": [
+      {
+        "description": "Use recursion to determine whether the following string is a palindrome",
+        "input": "anita lava la tina",
+        "expected_output": "True"
+      },
+      {
+        "description": "Implement a recursive function that calculates the nth term of the Fibonacci sequence for the following position",
+        "input": 6,
+        "expected_output": "8"
+      },
+      {
+        "description": "Use recursion to verify whether the following string is a valid symmetric encryption key (same forwards and backwards)",
+        "input": "A1b2B1a",
+        "expected_output": "True"
+      }
+    ]
+  }
+  

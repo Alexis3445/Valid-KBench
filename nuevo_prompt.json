@@ -1,0 +1,119 @@
+{
+    "Algebraicos": [
+      {
+        "task_id": "alg_001",
+        "category": "Algebraicos",
+        "description": "calcule el factorial de",
+        "input": 5,
+        "expected_output": "120",
+        "function_name": "calcule_func",
+        "test_code": "assert calcule_func(5) == '120'"
+      },
+      {
+        "task_id": "alg_002",
+        "category": "Algebraicos",
+        "description": "calcule la suma de los numeros naturales hasta el numero",
+        "input": 10,
+        "expected_output": "55",
+        "function_name": "calcule_func",
+        "test_code": "assert calcule_func(10) == '55'"
+      },
+      {
+        "task_id": "alg_003",
+        "category": "Algebraicos",
+        "description": "Determina si es primo el numero",
+        "input": 17,
+        "expected_output": "True",
+        "function_name": "determina_func",
+        "test_code": "assert determina_func(17) == 'True'"
+      }
+    ],
+    "Ordenamiento": [
+      {
+        "task_id": "ord_004",
+        "category": "Ordenamiento",
+        "description": "ordene la siguiente lista de menor a mayor",
+        "input": [4, 2, 9, 1],
+        "expected_output": "1 2 4 9",
+        "function_name": "ordene_func",
+        "test_code": "assert ordene_func([4, 2, 9, 1]) == '1 2 4 9'"
+      },
+      {
+        "task_id": "ord_005",
+        "category": "Ordenamiento",
+        "description": "ordene la siguiente lista de mayor a menor",
+        "input": [4, 2, 9, 1],
+        "expected_output": "9 4 2 1",
+        "function_name": "ordene_func",
+        "test_code": "assert ordene_func([4, 2, 9, 1]) == '9 4 2 1'"
+      },
+      {
+        "task_id": "ord_006",
+        "category": "Ordenamiento",
+        "description": "Utilice el metodo quick sort para ordenar de mayor a menor la siguiente lista de numeros",
+        "input": [4, 2, 9, 1],
+        "expected_output": "9 4 2 1",
+        "function_name": "utilice_func",
+        "test_code": "assert utilice_func([4, 2, 9, 1]) == '9 4 2 1'"
+      }
+    ],
+    "Búsqueda": [
+      {
+        "task_id": "bús_007",
+        "category": "Búsqueda",
+        "description": "Encuentre la posición del número 9 en la siguiente lista",
+        "input": [4, 2, 9, 1],
+        "expected_output": "2",
+        "function_name": "encuentre_func",
+        "test_code": "assert encuentre_func([4, 2, 9, 1]) == '2'"
+      },
+      {
+        "task_id": "bús_008",
+        "category": "Búsqueda",
+        "description": "Busque el número 7 en la siguiente lista y devuelva su posición si existe, de lo contrario devuelva -1",
+        "input": [3, 8, 4, 1],
+        "expected_output": "-1",
+        "function_name": "busque_func",
+        "test_code": "assert busque_func([3, 8, 4, 1]) == '-1'"
+      },
+      {
+        "task_id": "bús_009",
+        "category": "Búsqueda",
+        "description": "Utilice búsqueda binaria para encontrar el número 5 en la siguiente lista ordenada",
+        "input": [1, 3, 5, 7, 9],
+        "expected_output": "2",
+        "function_name": "utilice_func",
+        "test_code": "assert utilice_func([1, 3, 5, 7, 9]) == '2'"
+      }
+    ],
+    "Recursividad": [
+      {
+        "task_id": "rec_010",
+        "category": "Recursividad",
+        "description": "Determine por recursividad si la siguiente cadena es un palíndromo",
+        "input": "anita lava la tina",
+        "expected_output": "True",
+        "function_name": "determine_func",
+        "test_code": "assert determine_func('anita lava la tina') == 'True'"
+      },
+      {
+        "task_id": "rec_011",
+        "category": "Recursividad",
+        "description": "Implemente una función recursiva para calcular el enésimo término de la secuencia de Fibonacci de la siguioente posición",
+        "input": 6,
+        "expected_output": "8",
+        "function_name": "implemente_func",
+        "test_code": "assert implemente_func(6) == '8'"
+      },
+      {
+        "task_id": "rec_012",
+        "category": "Recursividad",
+        "description": "Determine si la siguiente cadena es un palíndromo",
+        "input": "anita lava la tina",
+        "expected_output": "True",
+        "function_name": "determine_func",
+        "test_code": "assert determine_func('anita lava la tina') == 'True'"
+      }
+    ]
+  }
+  

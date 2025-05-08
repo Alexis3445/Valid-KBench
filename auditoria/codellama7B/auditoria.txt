@@ -1,0 +1,5479 @@
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 2] Write a program in the language python that Implement an iterative function that calculates the factorial of the number: 5.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 120.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+*Example*:
+
+```
+5! = 5 * 4 * 3 * 2 * 1 = 120
+```
+
+### Requirements
+
+* Use functions
+* Use if/else statements
+* Use loops
+
+### Solution
+
+See ``14.py``
+
+### Additional material
+
+1. The full list of [Python operators and examples](https://www.tutorialspoint.com/python/python_basic_operators.htm)
+
+##### Submitting the solution
+
+Paste your code into [Solution](./Solution).
+
+##### Running the tests
+
+Execute the tests by calling `python test.py`.
+
+
+## 15. Create a program that shows a list of all the numbers from 1 to 100.
+
+Write a program that creates a list of all the numbers from 1 to 100, and then prints them all out.
+
+##### Requirements
+
+* Use functions
+* Use for loops
+
+##### Solution
+
+See ``15.py``
+
+##### Additional material
+
+The full
+
+Código extraído:
+### Requirements
+
+* Use functions
+* Use if/else statements
+* Use loops
+
+### Solution
+
+See ``14.py``
+
+### Additional material
+
+1. The full list of [Python operators and examples](https://www.tutorialspoint.com/python/python_basic_operators.htm)
+
+##### Submitting the solution
+
+Paste your code into [Solution](./Solution).
+
+##### Running the tests
+
+Execute the tests by calling `python test.py`.
+
+
+## 15. Create a program that shows a list of all the numbers from 1 to 100.
+
+Write a program that creates a list of all the numbers from 1 to 100, and then prints them all out.
+
+##### Requirements
+
+* Use functions
+* Use for loops
+
+##### Solution
+
+See ``15.py``
+
+##### Additional material
+
+The full
+
+Esperado: 120
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 3] Write a program in the language python that Implement an iterative function that calculates the factorial of the number: 5.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 120.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+The output should look like this:
+
+The input should be in the form of a number. There should be no additional output besides the final output. The output should be a number.
+
+* Input Format
+The first line contains an integer, `n`.
+
+* Constraints
+The factorial of a number will not exceed `100!`.
+
+* Output Format
+An integer that denotes the result of the factorial function applied on the number `n`.
+
+* Sample Input 0
+
+```
+5
+```
+
+* Sample Output 0
+
+```
+120
+```
+
+* Explanation 0
+The factorial of 5 is 120.
+
+* Sample Input 1
+
+```
+10
+```
+
+* Sample Output 1
+
+```
+3628800
+```
+
+* Explanation 1
+The factorial of 10 is 3628800.
+
+
+### Solution
+
+function factorialIterative(n){
+
+##### Itterative
+
+```python
+if n == 1:
+    return 1
+else:
+
+Código extraído:
+### Solution
+
+function factorialIterative(n){
+
+##### Itterative
+
+```python
+if n == 1:
+    return 1
+else:
+
+Esperado: 120
+Salida   : 
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 2] Write a program in the language c that Implement an iterative function that calculates the factorial of the number: 5.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 120.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+## The solution
+```c
+#include <stdio.h>
+
+int factorial(int n) {
+    int i = 1;
+    int result = 1;
+
+    while(i <= n) {
+        result *= i;
+        i++;
+    }
+
+    return result;
+}
+
+int main(void) {
+    printf("%i\n", factorial(5));
+
+    return 0;
+}
+```
+
+## Output
+```
+120
+```
+
+### Challenges (0/2 done)
+- [ ] Write a comment above each function that describes its purpose.
+- [ ] Change the main function to provide two numbers as arguments. The first number is the first factorial to calculate, and the second number is the last factorial to calculate. Print the result of each calculation and the total. 
+
+### Hints
+1. In order to get the result of the factorial function, you must call the function with the value 5.
+2. Use the return value of the function.
+3. Use a variable to store the value of the function call.
+4.
+
+Código extraído:
+#include <stdio.h>
+
+int factorial(int n) {
+    int i = 1;
+    int result = 1;
+
+    while(i <= n) {
+        result *= i;
+        i++;
+    }
+
+    return result;
+}
+
+int main(void) {
+    printf("%i\n", factorial(5));
+
+    return 0;
+}
+
+Esperado: 120
+Salida   : 120
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 3] Write a program in the language bash that Implement an iterative function that calculates the factorial of the number: 5.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 120.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+Example output:
+
+```
+120
+```
+
+Note: The program should work for any integer number > 0.
+
+### Solution
+
+function factorial() {
+
+    # Iterative factorial
+    #
+    # $1: number to calculate factorial
+    # $2: variable to store the result
+    # $3: the number of digits in the number (if 0, the number is 1)
+    #
+    factorial() {
+        if (( $# != 2 ))
+        then
+            echo "Wrong number of arguments"
+            exit
+        fi
+
+        local num=$1
+        local result=1
+        local digit_count=0
+
+        while (( $num ))
+        do
+            result=$(( $result * $num ))
+            digit_count=$(( $digit_count + 1 ))
+            num=$(( $num - 1 ))
+        done
+
+        echo $result
+
+        # If digit_count is 0 (result is 1), set 1
+        if (( $digit_count == 0 ))
+        then
+
+Código extraído:
+if (( $# != 2 ))
+        then
+            echo "Wrong number of arguments"
+            exit
+        fi
+
+        local num=$1
+        local result=1
+        local digit_count=0
+
+        while (( $num ))
+        do
+            result=$(( $result * $num ))
+            digit_count=$(( $digit_count + 1 ))
+            num=$(( $num - 1 ))
+        done
+
+        echo $result
+
+        # If digit_count is 0 (result is 1), set 1
+        if (( $digit_count == 0 ))
+        then
+
+Esperado: 120
+Salida   : Wrong number of arguments
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 1] Write a program in the language python that Develop a function that uses Gauss's formula to calculate the sum of natural numbers up to the given number: 10.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 55.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+- Input Format: A single line containing the number **N**.
+- Constraints: 1 <= **N** <= 100000.
+- Output Format: A single line containing the result.
+
+**Example**
+
+- Input: 
+
+```
+10
+```
+
+- Output: 
+
+```
+55
+```
+
+**Explanation**: The sum of the numbers from 1 to 10 is 55.
+
+**Solution:**
+
+```python
+# Write your code here
+
+N = int(input())
+s = 0
+for i in range(1, N + 1):
+    s += i
+print(s)
+```
+
+## 3. Write a program in the language python that Develop a function that adds up the numbers in a list and prints the total.
+
+- Input Format: The first line contains the number **N** of elements in the list. The second line contains **N** space-separated integers that are the elements in the list.
+- Constraints: 1 <= **N** <= 1000.
+- Output Format
+
+Código extraído:
+# Write your code here
+
+N = int(input())
+s = 0
+for i in range(1, N + 1):
+    s += i
+print(s)
+
+Esperado: 55
+Salida   : 55
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 2] Write a program in the language python that Develop a function that uses Gauss's formula to calculate the sum of natural numbers up to the given number: 10.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 55.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+**Input Format**:
+
+The first line contains the number N (10 ≤ N ≤ 1000).
+
+**Output Format**:
+
+Print the answer to the problem on the first line.
+
+**Sample Input 0**:
+```
+10
+```
+
+**Sample Output 0**:
+```
+55
+```
+
+**Explanation 0**:
+
+N = 10, so the answer is given by the following formula:
+
+10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 55
+
+### Python
+
+```python
+n = int(input())
+s = 0
+
+for i in range(1, n+1):
+    s += i
+    
+print(s)
+```
+
+### Javascript
+
+```javascript
+const input = require('fs').readFileSync('/dev/stdin', 'utf8');
+const [n] = input.split(' ');
+let result = 0
+
+for (let i = 1; i <= n; i
+
+Código extraído:
+n = int(input())
+s = 0
+
+for i in range(1, n+1):
+    s += i
+    
+print(s)
+
+Esperado: 55
+Salida   : 55
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 3] Write a program in the language python that Develop a function that uses Gauss's formula to calculate the sum of natural numbers up to the given number: 10.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 55.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Example
+
+    Input:
+    
+        5
+    
+    Output:
+    
+        55
+
+### Hints
+
+You may use Python's inbuilt functions and functions like sum(). The Gauss's sum formula is as follows:
+
+n(n+1) / 2
+
+### Input Format
+
+One integer, the upper bound.
+
+### Output Format
+
+The final sum.
+
+### Sample Input
+
+    10
+
+### Sample Output
+
+    55
+
+### Solutions
+
+    n = int(input())
+    print((n * (n + 1) // 2)
+
+### Note
+
+You may use math module to solve this problem if required.
+
+### Bonus
+
+Rewrite the program to print the sums of the following series for the given upper bound (n):
+
+1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196
+
+Código extraído:
+### Example
+
+    Input:
+    
+        5
+    
+    Output:
+    
+        55
+
+### Hints
+
+You may use Python's inbuilt functions and functions like sum(). The Gauss's sum formula is as follows:
+
+n(n+1) / 2
+
+### Input Format
+
+One integer, the upper bound.
+
+### Output Format
+
+The final sum.
+
+### Sample Input
+
+    10
+
+### Sample Output
+
+    55
+
+### Solutions
+
+    n = int(input())
+    print((n * (n + 1) // 2)
+
+### Note
+
+You may use math module to solve this problem if required.
+
+### Bonus
+
+Rewrite the program to print the sums of the following series for the given upper bound (n):
+
+1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196
+
+Esperado: 55
+Salida   : 
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 1] Write a program in the language bash that Develop a function that uses Gauss's formula to calculate the sum of natural numbers up to the given number: 10.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 55.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Solution
+
+```bash
+#!/bin/bash
+function gaussSum(){
+    local num=$1
+    local sum=0
+
+    if [ $num -gt 0 ]; then
+        for (( i=1; i <= $num; i++ ))
+        do
+            let "sum += $i"
+        done
+
+        echo $sum
+    else
+        echo "Input must be positive!"
+    fi
+}
+
+# Checking the input
+if [ -n "$1" ]; then
+    input=$1
+else
+    echo "Input is not valid!"
+    exit 1
+fi
+
+echo "The sum of natural numbers up to ${input} is $(gaussSum $input)"
+```
+
+### Tests
+
+```bash
+$ bash sum_gauss.sh
+Input is not valid!
+
+$ bash sum_gauss.sh -5
+Input must be positive!
+
+$ bash sum_gauss.sh 10
+The sum of natural numbers up to 10 is 55
+
+$ bash sum_gauss.sh 0
+Input must be positive!
+
+Código extraído:
+#!/bin/bash
+function gaussSum(){
+    local num=$1
+    local sum=0
+
+    if [ $num -gt 0 ]; then
+        for (( i=1; i <= $num; i++ ))
+        do
+            let "sum += $i"
+        done
+
+        echo $sum
+    else
+        echo "Input must be positive!"
+    fi
+}
+
+# Checking the input
+if [ -n "$1" ]; then
+    input=$1
+else
+    echo "Input is not valid!"
+    exit 1
+fi
+
+echo "The sum of natural numbers up to ${input} is $(gaussSum $input)"
+
+Esperado: 55
+Salida   : Input is not valid!
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 1] Write a program in the language python that Implement an efficient primality test (such as checking divisibility up to the square root) to determine if the number is prime: 17.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+The first line of input contains an integer p.
+
+### Example
+
+#### Input
+
+```
+7
+```
+
+#### Output
+
+```
+True
+```
+
+### Solution
+
+```python
+p = int(input())
+for i in range(2,int(p**0.5)+1):
+    if p%i==0:
+        print('False')
+        exit(0)
+print('True')
+```
+
+### Run Code
+
+```bash
+python3 Solution.py
+```
+
+### Checkpoints
+
+- Check that there are no **duplicate** primes.
+
+### Time Complexity
+
+- $$O(\sqrt{n})$$
+
+### Space Complexity
+
+- $$O(\sqrt{n})$$
+
+## 1.4:
+
+Implement a program in the language Python that implements the sieve of Eratosthenes to find all primes up to a number n.
+
+### Example
+
+#### Input
+
+```
+20
+```
+
+#### Output
+
+```
+2
+3
+5
+7
+11
+13
+17
+
+Código extraído:
+p = int(input())
+for i in range(2,int(p**0.5)+1):
+    if p%i==0:
+        print('False')
+        exit(0)
+print('True')
+
+Esperado: True
+Salida   : True
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 2] Write a program in the language python that Implement an efficient primality test (such as checking divisibility up to the square root) to determine if the number is prime: 17.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+## Input/Output
+
+- **[execution time limit] 4 seconds (py)**
+
+- **[input] integer n**
+
+  A positive integer.
+
+  _Guaranteed constraints:_  
+  `2 ≤ n ≤ 10`.
+
+- **[output] boolean**
+
+  - True if n is prime, false otherwise.
+
+## Example
+
+- **[input]**  
+  `17`
+
+- **[output]**  
+  `True`
+
+**Happy Coding :)**
+
+## Submit your code here:  
+http://bgcoder.com/Contests/Compete/Index/330#11
+
+## Sample Test Cases
+
+- **Sample test 1:**  
+  **Input:**  
+  `17`  
+  **Output:**  
+  `True`
+
+- **Sample test 2:**  
+  **Input:**  
+  `4`  
+  **Output:**  
+  `False`
+
+- **Sample test 3:**  
+  **Input:
+
+Código extraído:
+## Input/Output
+
+- **[execution time limit] 4 seconds (py)**
+
+- **[input] integer n**
+
+  A positive integer.
+
+  _Guaranteed constraints:_  
+  `2 ≤ n ≤ 10`.
+
+- **[output] boolean**
+
+  - True if n is prime, false otherwise.
+
+## Example
+
+- **[input]**  
+  `17`
+
+- **[output]**  
+  `True`
+
+**Happy Coding :)**
+
+## Submit your code here:  
+http://bgcoder.com/Contests/Compete/Index/330#11
+
+## Sample Test Cases
+
+- **Sample test 1:**  
+  **Input:**  
+  `17`  
+  **Output:**  
+  `True`
+
+- **Sample test 2:**  
+  **Input:**  
+  `4`  
+  **Output:**  
+  `False`
+
+- **Sample test 3:**  
+  **Input:
+
+Esperado: True
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 3] Write a program in the language python that Implement an efficient primality test (such as checking divisibility up to the square root) to determine if the number is prime: 17.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+Your code will be executed using a Python interpreter (either CPython or PyPy). The Python code you submit will be run with the Python version 3.6.1.
+
+You can use any standard library method provided by Python, including importing any module or library. You may also use built-in libraries (e.g. math, collections, etc.).
+
+#### Sample Input 1:
+```
+47
+```
+
+#### Sample Output 1:
+```
+True
+```
+
+#### Sample Input 2:
+```
+12
+```
+
+#### Sample Output 2:
+```
+False
+```
+
+#### Sample Input 3:
+```
+31
+```
+
+#### Sample Output 3:
+```
+True
+```
+
+#### Sample Input 4:
+```
+5
+```
+
+#### Sample Output 4:
+```
+False
+```
+
+#### Sample Input 5:
+```
+11
+```
+
+#### Sample Output 5:
+```
+False
+```
+
+#### Sample Input 6:
+```
+15
+```
+
+#### Sample Output 6:
+```
+True
+```
+
+#### Sample Input
+
+Código extraído:
+#### Sample Input 1:
+```
+47
+```
+
+#### Sample Output 1:
+```
+True
+```
+
+#### Sample Input 2:
+```
+12
+```
+
+#### Sample Output 2:
+```
+False
+```
+
+#### Sample Input 3:
+```
+31
+```
+
+#### Sample Output 3:
+```
+True
+```
+
+#### Sample Input 4:
+```
+5
+```
+
+#### Sample Output 4:
+```
+False
+```
+
+#### Sample Input 5:
+```
+11
+```
+
+#### Sample Output 5:
+```
+False
+```
+
+#### Sample Input 6:
+```
+15
+```
+
+#### Sample Output 6:
+```
+True
+```
+
+#### Sample Input
+
+Esperado: True
+Salida   : 
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 1] Write a program in the language c that Implement an efficient primality test (such as checking divisibility up to the square root) to determine if the number is prime: 17.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+    int input;
+    scanf("%d", &input);
+
+    for (int i = 2; i <= sqrt(input); ++i)
+    {
+        if (input % i == 0)
+        {
+            printf("%d\n", i);
+            break;
+        }
+    }
+
+    printf("True");
+
+    return 0;
+}
+
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+    int input;
+    scanf("%d", &input);
+    int check = 0;
+
+    for (int i = 2; i <= sqrt(input); ++i)
+    {
+        if (input % i == 0)
+        {
+            check = 1;
+            printf("%d\n", i);
+            break;
+        }
+    }
+
+    printf("%s", check ? "False" : "True");
+
+    return 0;
+}
+
+Código extraído:
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+    int input;
+    scanf("%d", &input);
+
+    for (int i = 2; i <= sqrt(input); ++i)
+    {
+        if (input % i == 0)
+        {
+            printf("%d\n", i);
+            break;
+        }
+    }
+
+    printf("True");
+
+    return 0;
+}
+
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+    int input;
+    scanf("%d", &input);
+    int check = 0;
+
+    for (int i = 2; i <= sqrt(input); ++i)
+    {
+        if (input % i == 0)
+        {
+            check = 1;
+            printf("%d\n", i);
+            break;
+        }
+    }
+
+    printf("%s", check ? "False" : "True");
+
+    return 0;
+}
+
+Esperado: True
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 2] Write a program in the language bash that Implement an efficient primality test (such as checking divisibility up to the square root) to determine if the number is prime: 17.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+The program should have the following structure:
+
+```bash
+#!/bin/bash
+...
+
+...
+echo "true"
+```
+
+# Example
+
+```bash
+#!/bin/bash
+
+is_prime() {
+  ...
+}
+
+# Checking the number 23 to determine if it is prime
+if is_prime 23; then
+  echo "True"
+else
+  echo "False"
+fi
+```
+
+# Example 2
+
+```bash
+#!/bin/bash
+
+is_prime() {
+  ...
+}
+
+# Checking the number 23 to determine if it is prime
+if is_prime 23; then
+  echo "True"
+else
+  echo "False"
+fi
+
+# Checking the number 149 to determine if it is prime
+if is_prime 149; then
+  echo "True"
+else
+  echo "False"
+fi
+```
+
+# Example 3
+
+```bash
+#!/bin/bash
+
+is_prime() {
+  ...
+}
+
+# Checking the number 23 to
+
+Código extraído:
+#!/bin/bash
+...
+
+...
+echo "true"
+
+Esperado: True
+Salida   : true
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 3] Write a program in the language bash that Implement an efficient primality test (such as checking divisibility up to the square root) to determine if the number is prime: 17.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+You may add a header comment to your program, but nothing else.
+
+
+<div class="hint">To check if a number is prime, you may check if it is divisible by any number between 2 and √N
+
+```bash
+for ((i=2; i<N; i++)); do
+if [ $((N % i)) -eq 0 ]; then
+echo "not prime"
+fi
+done
+echo "prime"
+```
+</div>
+
+<div class="hint">
+    It is faster to check if a number is prime by only dividing it by numbers from 2 to sqrt(n)
+</div>
+
+<div class="hint">
+    Bash does not support floating-point numbers, so it cannot be used to check if a number is prime.
+</div>
+
+<div class="hint">
+    Bash can check if a number is divisible by another number.
+</div>
+
+<div class="hint">
+    There is a built-in bash command to find the square root of a number.
+</div>
+
+<div class="hint">
+    There is
+
+Código extraído:
+for ((i=2; i<N; i++)); do
+if [ $((N % i)) -eq 0 ]; then
+echo "not prime"
+fi
+done
+echo "prime"
+
+Esperado: True
+Salida   : prime
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 1] Write a program in the language python that Implement the Heap Sort algorithm to sort the following list of numbers in ascending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 1 2 4 9.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+# Heap Sort Algorithm
+
+## Python
+
+```python
+def heapify(arr, n, i):
+    largest = i
+    l = 2 * i + 1
+    r = 2 * i + 2
+
+    if l < n and arr[l] > arr[largest]:
+        largest = l
+
+    if r < n and arr[r] > arr[largest]:
+        largest = r
+
+    if largest != i:
+        arr[i], arr[largest] = arr[largest], arr[i]
+
+        heapify(arr, n, largest)
+
+
+def heapSort(arr):
+    n = len(arr)
+
+    for i in range(n, -1, -1):
+        heapify(arr, n, i)
+
+    for i in range(n - 1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i]
+
+        heapify(arr, i, 0)
+
+    return arr
+
+
+arr = [4, 2, 9, 1
+
+Código extraído:
+# Heap Sort Algorithm
+
+## Python
+
+```python
+def heapify(arr, n, i):
+    largest = i
+    l = 2 * i + 1
+    r = 2 * i + 2
+
+    if l < n and arr[l] > arr[largest]:
+        largest = l
+
+    if r < n and arr[r] > arr[largest]:
+        largest = r
+
+    if largest != i:
+        arr[i], arr[largest] = arr[largest], arr[i]
+
+        heapify(arr, n, largest)
+
+
+def heapSort(arr):
+    n = len(arr)
+
+    for i in range(n, -1, -1):
+        heapify(arr, n, i)
+
+    for i in range(n - 1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i]
+
+        heapify(arr, i, 0)
+
+    return arr
+
+
+arr = [4, 2, 9, 1
+
+Esperado: 1 2 4 9
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 2] Write a program in the language python that Implement the Heap Sort algorithm to sort the following list of numbers in ascending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 1 2 4 9.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+#### Output Format
+
+The output must be printed by the program, each number printed on its own line.
+
+#### Sample Input
+
+```
+[4, 2, 9, 1]
+```
+
+#### Sample Output
+
+```
+1
+2
+4
+9
+```
+
+#### 输入格式
+
+输入的第一行包含一个数组，数组中的元素用空格分开，数组的元素是正整数。
+
+#### 输出格式
+
+输出文件只包含一个数组，数组中的元素用空格分开，数组的元素是正整数。
+
+#### 输入样例
+
+```
+[4, 2, 9, 1]
+```
+
+#### 输出样例
+
+```
+1
+2
+4
+9
+```
+
+#### 分析
+
+```
+def heapSort(alist):
+    """
+    Heap sort algorithm
+    """
+    length = len(alist)
+
+    # Build a max
+
+Código extraído:
+#### Output Format
+
+The output must be printed by the program, each number printed on its own line.
+
+#### Sample Input
+
+```
+[4, 2, 9, 1]
+```
+
+#### Sample Output
+
+```
+1
+2
+4
+9
+```
+
+#### 输入格式
+
+输入的第一行包含一个数组，数组中的元素用空格分开，数组的元素是正整数。
+
+#### 输出格式
+
+输出文件只包含一个数组，数组中的元素用空格分开，数组的元素是正整数。
+
+#### 输入样例
+
+```
+[4, 2, 9, 1]
+```
+
+#### 输出样例
+
+```
+1
+2
+4
+9
+```
+
+#### 分析
+
+```
+def heapSort(alist):
+    """
+    Heap sort algorithm
+    """
+    length = len(alist)
+
+    # Build a max
+
+Esperado: 1 2 4 9
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 3] Write a program in the language python that Implement the Heap Sort algorithm to sort the following list of numbers in ascending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 1 2 4 9.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+<hr>
+
+## Solution
+
+```python
+list = [4, 2, 9, 1]
+
+def heapSort(arr):
+    n = len(arr)
+
+    # Build heap (rearrange array)
+    for i in range(n, -1, -1):
+        heapify(arr, n, i)
+
+    # One by one extract an element from heap
+    for i in range(n-1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i] # swap
+        heapify(arr, i, 0)
+
+    print(arr)
+
+def heapify(arr, n, i):
+    largest = i # Initialize largest as root
+    l = 2*i + 1 # left = 2*i + 1
+    r = 2*i + 2 # right = 2*i + 2
+
+    # See if left child of root exists and is greater than root
+    if l < n and arr[l] > arr[largest]:
+        largest = l
+
+Código extraído:
+## Solution
+
+```python
+list = [4, 2, 9, 1]
+
+def heapSort(arr):
+    n = len(arr)
+
+    # Build heap (rearrange array)
+    for i in range(n, -1, -1):
+        heapify(arr, n, i)
+
+    # One by one extract an element from heap
+    for i in range(n-1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i] # swap
+        heapify(arr, i, 0)
+
+    print(arr)
+
+def heapify(arr, n, i):
+    largest = i # Initialize largest as root
+    l = 2*i + 1 # left = 2*i + 1
+    r = 2*i + 2 # right = 2*i + 2
+
+    # See if left child of root exists and is greater than root
+    if l < n and arr[l] > arr[largest]:
+        largest = l
+
+Esperado: 1 2 4 9
+Salida   : 
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 1] Write a program in the language c that Implement the Heap Sort algorithm to sort the following list of numbers in ascending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 1 2 4 9.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Solution
+
+```c
+#include <stdio.h>
+#define ARRAY_SIZE 4
+
+void heapify(int a[], int n, int i)
+{
+    int largest = i, l = 2 * i + 1, r = 2 * i + 2;
+
+    if(l < n && a[l] > a[largest])
+    {
+        largest = l;
+    }
+
+    if(r < n && a[r] > a[largest])
+    {
+        largest = r;
+    }
+
+    if(largest != i)
+    {
+        int temp = a[largest];
+        a[largest] = a[i];
+        a[i] = temp;
+        heapify(a, n, largest);
+    }
+}
+
+void build_heap(int a[], int n)
+{
+    for(int i = n / 2 - 1; i >= 0; i--)
+    {
+        heapify(a, n, i);
+    }
+}
+
+void sort
+
+Código extraído:
+#include <stdio.h>
+#define ARRAY_SIZE 4
+
+void heapify(int a[], int n, int i)
+{
+    int largest = i, l = 2 * i + 1, r = 2 * i + 2;
+
+    if(l < n && a[l] > a[largest])
+    {
+        largest = l;
+    }
+
+    if(r < n && a[r] > a[largest])
+    {
+        largest = r;
+    }
+
+    if(largest != i)
+    {
+        int temp = a[largest];
+        a[largest] = a[i];
+        a[i] = temp;
+        heapify(a, n, largest);
+    }
+}
+
+void build_heap(int a[], int n)
+{
+    for(int i = n / 2 - 1; i >= 0; i--)
+    {
+        heapify(a, n, i);
+    }
+}
+
+void sort
+
+Esperado: 1 2 4 9
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 2] Write a program in the language c that Implement the Heap Sort algorithm to sort the following list of numbers in ascending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 1 2 4 9.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Sample input/output
+
+```c
+int main(int argc, char* argv[]) {
+
+  int nums[4] = { 4, 2, 9, 1 };
+  // Your code here
+
+  printf("%d %d %d %d", nums[0], nums[1], nums[2], nums[3]);
+
+  return 0;
+}
+```
+
+### Sample output
+
+```
+1 2 4 9
+```
+
+### Requirements
+
+Your program must be able to handle the following edge cases:
+
+- The list of numbers may be empty or contain only a single number (in which case the result must be the same list).
+- The list of numbers may contain repeated numbers (that is, the list `[1, 1, 1, 2, 2]` should be sorted as `[1, 1, 1, 2, 2]`).
+- The list of numbers may contain negative numbers.
+- The list of numbers may contain floating point numbers.
+- The list of numbers may contain numbers of any valid size (e
+
+Código extraído:
+int main(int argc, char* argv[]) {
+
+  int nums[4] = { 4, 2, 9, 1 };
+  // Your code here
+
+  printf("%d %d %d %d", nums[0], nums[1], nums[2], nums[3]);
+
+  return 0;
+}
+
+Esperado: 1 2 4 9
+Salida   : 4 2 9 1
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 3] Write a program in the language c that Implement the Heap Sort algorithm to sort the following list of numbers in ascending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 1 2 4 9.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Solution
+
+    #include <stdio.h>
+
+    //function to print the array
+    void print_arr(int arr[], int size)
+    {
+    	int i;
+    	for(i=0; i<size; i++)
+    	{
+    		printf("%d ", arr[i]);
+    	}
+    }
+
+    //function to do heap sort
+    void heap_sort(int arr[], int size)
+    {
+    	int temp, i, j, parent, left, right, swap;
+    	//converting the array to max heap
+    	for(i=size/2-1; i>=0; i--)
+    	{
+    		for(j=i+1; j<size; j++)
+    		{
+    			if(arr[j] > arr[i])
+    			{
+    				temp = arr[j];
+    				arr[j] = arr[i];
+    				arr[i] = temp;
+    			}
+
+Código extraído:
+#include <stdio.h>
+
+    //function to print the array
+    void print_arr(int arr[], int size)
+    {
+    	int i;
+    	for(i=0; i<size; i++)
+    	{
+    		printf("%d ", arr[i]);
+    	}
+    }
+
+    //function to do heap sort
+    void heap_sort(int arr[], int size)
+    {
+    	int temp, i, j, parent, left, right, swap;
+    	//converting the array to max heap
+    	for(i=size/2-1; i>=0; i--)
+    	{
+    		for(j=i+1; j<size; j++)
+    		{
+    			if(arr[j] > arr[i])
+    			{
+    				temp = arr[j];
+    				arr[j] = arr[i];
+    				arr[i] = temp;
+    			}
+
+Esperado: 1 2 4 9
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 1] Write a program in the language bash that Implement the Heap Sort algorithm to sort the following list of numbers in ascending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 1 2 4 9.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+Remember to include the following in the top of your file:
+
+```bash
+#!/bin/bash
+```
+
+##### Source
+
+* https://www.hackerrank.com/challenges/bash-tutorials-heap-sort
+
+[[↑] Back to top](#List-of-contents)
+### Bash: Write a program that prints the number of days in a month.
+
+```bash
+#!/bin/bash
+
+# Takes input as year and month.
+function days_in_month() {
+    case $1 in
+        '1'|'3'|'5'|'7'|'8'|'10'|'12') echo 31;;
+        '4'|'6'|'9'|'11') echo 30;;
+        '2')
+            if [[ $(( $2 % 400 )) -eq 0 ]] || [[ $(( $2 % 4 )) -eq 0 ]] && [[ $(( $2 % 100 )) -ne 0 ]]; then
+                echo 29
+            else
+
+Código extraído:
+#!/bin/bash
+
+Esperado: 1 2 4 9
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 1] Write a program in the language python that Apply the Merge Sort algorithm to sort the following list of hashed file sizes (integers) in descending order: [4096, 2048, 8192, 1024].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8192 4096 2048 1024.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+To check your work, run your code on the following file sizes: [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 3, 2, 3, 8, 4, 6, 2, 6, 4, 3, 3, 8, 3, 2, 7, 9, 5, 2, 8, 7, 4, 1024, 90, 768, 1024, 600]
+
+Merge Sort Algorithm:
+
+1. Split the list into two halves until the list is empty
+2. Recursively sort the two halves
+3. Merge the two halves and return the sorted list
+
+Merge Sort Algorithm with Python:
+
+def mergeSort(array):
+    if len(array) == 1:
+        return array
+    mid = len(array) // 2
+    left = array[:mid]
+    right = array[mid:]
+
+Código extraído:
+def mergeSort(array):
+    if len(array) == 1:
+        return array
+    mid = len(array) // 2
+    left = array[:mid]
+    right = array[mid:]
+
+Esperado: 8192 4096 2048 1024
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 2] Write a program in the language python that Apply the Merge Sort algorithm to sort the following list of hashed file sizes (integers) in descending order: [4096, 2048, 8192, 1024].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8192 4096 2048 1024.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+---
+
+## Hints
+
+**Hint 1**
+
+When working with python dictionaries, you can convert it into a list with the following syntax:
+
+```python
+list(dictionary.keys())
+```
+
+**Hint 2**
+
+The following syntax allows to obtain the index of the largest key in a list:
+
+```python
+list.index(max(list))
+```
+
+**Hint 3**
+
+To sort a list in descending order, you can use the following syntax:
+
+```python
+sorted(list, reverse=True)
+```
+
+---
+
+## Solutions
+
+
+### Solution 1
+
+```python
+dictionary = {4096: 1, 2048: 2, 8192: 3, 1024: 4}
+list(dictionary.keys())
+list.index(max(list))
+sorted(list, reverse=True)
+
+print(sorted(list, reverse=True))
+```
+
+
+### Solution 2
+
+```python
+dictionary = {4096: 1, 20
+
+Código extraído:
+list(dictionary.keys())
+
+Esperado: 8192 4096 2048 1024
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 3] Write a program in the language python that Apply the Merge Sort algorithm to sort the following list of hashed file sizes (integers) in descending order: [4096, 2048, 8192, 1024].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8192 4096 2048 1024.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+The Merge Sort Algorithm
+The merge sort algorithm is a recursive algorithm, which can be implemented in many programming languages.
+This is an implementation of the merge sort algorithm in the language python:
+def merge_sort(numbers):
+    if len(numbers) > 1:
+        half = len(numbers) // 2
+        left = numbers[:half]
+        right = numbers[half:]
+
+        merge_sort(left)
+        merge_sort(right)
+
+        i = 0
+        j = 0
+        k = 0
+        while i < len(left) and j < len(right):
+            if left[i] > right[j]:
+                numbers[k] = right[j]
+                j += 1
+            else:
+                numbers[k] = left[i]
+                i += 1
+            k += 1
+
+        while i < len(left):
+            numbers[k] = left[i]
+            i += 1
+            k += 1
+
+        while j < len(right):
+            numbers[k] = right[j]
+            j += 1
+
+Código extraído:
+def merge_sort(numbers):
+    if len(numbers) > 1:
+        half = len(numbers) // 2
+        left = numbers[:half]
+        right = numbers[half:]
+
+        merge_sort(left)
+        merge_sort(right)
+
+        i = 0
+        j = 0
+        k = 0
+        while i < len(left) and j < len(right):
+            if left[i] > right[j]:
+                numbers[k] = right[j]
+                j += 1
+            else:
+                numbers[k] = left[i]
+                i += 1
+            k += 1
+
+        while i < len(left):
+            numbers[k] = left[i]
+            i += 1
+            k += 1
+
+        while j < len(right):
+            numbers[k] = right[j]
+            j += 1
+
+Esperado: 8192 4096 2048 1024
+Salida   : 
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 1] Write a program in the language c that Apply the Merge Sort algorithm to sort the following list of hashed file sizes (integers) in descending order: [4096, 2048, 8192, 1024].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8192 4096 2048 1024.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Input Format
+
+There is no input for this problem.
+
+### Output Format
+
+The output should be printed to the console as described above.
+
+### Sample Input
+
+There is no sample input for this problem.
+
+### Sample Output
+
+8192 4096 2048 1024
+
+### Note
+
+- You are not allowed to change the input given to you by the problem.
+- The only input to your program will be the list given to you.
+- Your program should print the final result in descending order only.
+- You should not print any extra output text, comments, or labels.
+- Do not forget to finish your program with the final output line.
+
+### Code
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#define LISTSIZE 4
+#define MAXSIZE 16
+
+int main(void) {
+	int list[LISTSIZE] = {4096, 2048, 8192, 1024
+
+Código extraído:
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#define LISTSIZE 4
+#define MAXSIZE 16
+
+int main(void) {
+	int list[LISTSIZE] = {4096, 2048, 8192, 1024
+
+Esperado: 8192 4096 2048 1024
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 2] Write a program in the language bash that Apply the Merge Sort algorithm to sort the following list of hashed file sizes (integers) in descending order: [4096, 2048, 8192, 1024].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8192 4096 2048 1024.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Solution
+
+```bash
+#!/bin/bash
+
+declare -a arr=(4096 2048 8192 1024)
+
+function merge_sort() {
+  local arr="$1"
+  local start="$2"
+  local end="$3"
+
+  if [ "$start" == "$end" ]; then
+    return
+  fi
+
+  local middle
+  middle=$((($end-$start+1)/2+$start))
+
+  local arr1
+  arr1=("${arr[@]:$start:$middle-$start}")
+
+  local arr2
+  arr2=("${arr[@]:$middle:$end-$middle}")
+
+  merge_sort arr1 $start $middle
+  merge_sort arr2 $middle $end
+
+  merge "${arr1[@]}" "${arr2[@]}" $start $end
+}
+
+function merge() {
+  local arr1="$1"
+  local arr2="$2"
+  local start="$3"
+  local end="$4"
+
+  local arr
+  arr=()
+
+  local i=
+
+Código extraído:
+#!/bin/bash
+
+declare -a arr=(4096 2048 8192 1024)
+
+function merge_sort() {
+  local arr="$1"
+  local start="$2"
+  local end="$3"
+
+  if [ "$start" == "$end" ]; then
+    return
+  fi
+
+  local middle
+  middle=$((($end-$start+1)/2+$start))
+
+  local arr1
+  arr1=("${arr[@]:$start:$middle-$start}")
+
+  local arr2
+  arr2=("${arr[@]:$middle:$end-$middle}")
+
+  merge_sort arr1 $start $middle
+  merge_sort arr2 $middle $end
+
+  merge "${arr1[@]}" "${arr2[@]}" $start $end
+}
+
+function merge() {
+  local arr1="$1"
+  local arr2="$2"
+  local start="$3"
+  local end="$4"
+
+  local arr
+  arr=()
+
+  local i=
+
+Esperado: 8192 4096 2048 1024
+Salida   : 
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 3] Write a program in the language bash that Apply the Merge Sort algorithm to sort the following list of hashed file sizes (integers) in descending order: [4096, 2048, 8192, 1024].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8192 4096 2048 1024.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+# Bash
+```sh
+function merge () {
+    if [ $1 -gt $2 ]
+    then
+        echo $1
+    else
+        echo $2
+    fi
+}
+
+function merge_sort () {
+    if [ $1 -gt $2 ]
+    then
+        echo $1 $2
+    else
+        echo $2 $1
+    fi
+}
+
+function merge_list () {
+    list=("$@")
+    if [ ${#list[@]} -eq 1 ]
+    then
+        echo ${list[0]}
+    elif [ ${#list[@]} -eq 2 ]
+    then
+        merge $(merge_sort ${list[0]} ${list[1]})
+    else
+        temp_list=()
+        for ((i=0; i < ${#list[@]}; i+=2))
+        do
+            temp_list+=($(merge_list ${list[i]} ${list[i+1]}))
+        done
+        merge_list ${temp_list[@]}
+    fi
+}
+
+echo $(merge_list 4096 204
+
+Código extraído:
+if [ $1 -gt $2 ]
+    then
+        echo $1
+    else
+        echo $2
+    fi
+}
+
+function merge_sort () {
+    if [ $1 -gt $2 ]
+    then
+        echo $1 $2
+    else
+        echo $2 $1
+    fi
+}
+
+function merge_list () {
+    list=("$@")
+    if [ ${#list[@]} -eq 1 ]
+    then
+        echo ${list[0]}
+    elif [ ${#list[@]} -eq 2 ]
+    then
+        merge $(merge_sort ${list[0]} ${list[1]})
+    else
+        temp_list=()
+        for ((i=0; i < ${#list[@]}; i+=2))
+        do
+            temp_list+=($(merge_list ${list[i]} ${list[i+1]}))
+        done
+        merge_list ${temp_list[@]}
+    fi
+}
+
+echo $(merge_list 4096 204
+
+Esperado: 8192 4096 2048 1024
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 1] Write a program in the language python that Use the Quick Sort algorithm to sort the following list of numbers in descending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 9 4 2 1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+The program must not print anything unless it is the final result.
+Do not use the Python sort() function.
+
+# Task 2
+
+Write a program in the language python that use the following function to reverse the order of the following list of numbers: [4, 2, 9, 1].
+
+```python
+def reverse(l):
+    # Your code here.
+```
+
+The program must print the final result, and provide the following expected output: 1 9 2 4
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+The program must not print anything unless it is the final result.
+Do not use the Python sort() function.
+
+# Task 3
+
+Write a program in the language python that use the following function to count the number of odd numbers in the following list of numbers: [4, 2, 9, 1].
+
+```python
+def odds_in_list(l):
+    # Your code here.
+```
+
+The program must print the final result, and provide the following expected output: 1
+Finish your code right after the
+
+Código extraído:
+def reverse(l):
+    # Your code here.
+
+Esperado: 9 4 2 1
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 2] Write a program in the language python that Use the Quick Sort algorithm to sort the following list of numbers in descending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 9 4 2 1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i, piv, j, temp;
+
+    int array[4] = { 4, 2, 9, 1 };
+
+    printf("Starting with: ");
+    for(i = 0; i < 4; i++)
+        printf("%d ", array[i]);
+    printf("\n");
+
+    piv = 1;
+    for(i = 0; i < 3; i++)
+    {
+        if(array[piv] < array[i + 1])
+            piv = i + 1;
+    }
+    printf("Pivot is: %d\n", array[piv]);
+    for(i = 0; i < 4; i++)
+    {
+        if(piv == i)
+        {
+            for(j = i; j < 3; j++)
+            {
+                if(array[j] > array[piv])
+                {
+                    temp = array[j];
+                    array
+
+Código extraído:
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i, piv, j, temp;
+
+    int array[4] = { 4, 2, 9, 1 };
+
+    printf("Starting with: ");
+    for(i = 0; i < 4; i++)
+        printf("%d ", array[i]);
+    printf("\n");
+
+    piv = 1;
+    for(i = 0; i < 3; i++)
+    {
+        if(array[piv] < array[i + 1])
+            piv = i + 1;
+    }
+    printf("Pivot is: %d\n", array[piv]);
+    for(i = 0; i < 4; i++)
+    {
+        if(piv == i)
+        {
+            for(j = i; j < 3; j++)
+            {
+                if(array[j] > array[piv])
+                {
+                    temp = array[j];
+                    array
+
+Esperado: 9 4 2 1
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 3] Write a program in the language python that Use the Quick Sort algorithm to sort the following list of numbers in descending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 9 4 2 1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Solution
+
+    def qsort(lst):
+        """Quicksort function.
+        
+        Input:  lst - a list of numbers
+        Output: the list lst sorted in descending order.
+        """
+        if len(lst) <= 1:
+            return lst
+        else:
+            pivot = lst[0]
+            less = [x for x in lst[1:] if x <= pivot]
+            greater = [x for x in lst[1:] if x > pivot]
+            return qsort(less) + [pivot] + qsort(greater)
+    
+    print qsort([4, 2, 9, 1])
+    
+## 04. Binary Search
+
+Write a program in the language python that Use the Binary Search algorithm to search the following list of numbers for the number 2: [1, 3, 6, 9, 2].
+The program must print only the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text,
+
+Código extraído:
+### Solution
+
+    def qsort(lst):
+        """Quicksort function.
+        
+        Input:  lst - a list of numbers
+        Output: the list lst sorted in descending order.
+        """
+        if len(lst) <= 1:
+            return lst
+        else:
+            pivot = lst[0]
+            less = [x for x in lst[1:] if x <= pivot]
+            greater = [x for x in lst[1:] if x > pivot]
+            return qsort(less) + [pivot] + qsort(greater)
+    
+    print qsort([4, 2, 9, 1])
+    
+## 04. Binary Search
+
+Write a program in the language python that Use the Binary Search algorithm to search the following list of numbers for the number 2: [1, 3, 6, 9, 2].
+The program must print only the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text,
+
+Esperado: 9 4 2 1
+Salida   : 
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 1] Write a program in the language c that Use the Quick Sort algorithm to sort the following list of numbers in descending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 9 4 2 1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+#include <stdio.h>
+
+#define SIZE 4
+
+int main() {
+    int list[SIZE] = {4, 2, 9, 1};
+    quick_sort(list, 0, SIZE - 1);
+    for (int i = 0; i < SIZE; i++) {
+        printf("%d ", list[i]);
+    }
+    return 0;
+}
+
+void quick_sort(int * list, int begin, int end) {
+    if (end - begin < 2) {
+        return;
+    }
+    int partition_index = partition(list, begin, end);
+    quick_sort(list, begin, partition_index - 1);
+    quick_sort(list, partition_index + 1, end);
+}
+
+int partition(int * list, int begin, int end) {
+    int pivot = list[begin];
+    int index = begin;
+    for (int i = begin + 1; i < end; i++) {
+        if (list[i] >= pivot) {
+            index++;
+
+Código extraído:
+#include <stdio.h>
+
+#define SIZE 4
+
+int main() {
+    int list[SIZE] = {4, 2, 9, 1};
+    quick_sort(list, 0, SIZE - 1);
+    for (int i = 0; i < SIZE; i++) {
+        printf("%d ", list[i]);
+    }
+    return 0;
+}
+
+void quick_sort(int * list, int begin, int end) {
+    if (end - begin < 2) {
+        return;
+    }
+    int partition_index = partition(list, begin, end);
+    quick_sort(list, begin, partition_index - 1);
+    quick_sort(list, partition_index + 1, end);
+}
+
+int partition(int * list, int begin, int end) {
+    int pivot = list[begin];
+    int index = begin;
+    for (int i = begin + 1; i < end; i++) {
+        if (list[i] >= pivot) {
+            index++;
+
+Esperado: 9 4 2 1
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 2] Write a program in the language c that Use the Quick Sort algorithm to sort the following list of numbers in descending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 9 4 2 1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n[4];
+    n[0] = 4;
+    n[1] = 2;
+    n[2] = 9;
+    n[3] = 1;
+
+    int i, j, pivot, temp;
+    for (i = 0; i < 3; i++)
+    {
+        for (j = i + 1; j < 4; j++)
+        {
+            if (n[i] < n[j])
+            {
+                temp = n[i];
+                n[i] = n[j];
+                n[j] = temp;
+            }
+        }
+    }
+
+    printf("%i %i %i %i\n", n[3], n[2], n[1], n[0]);
+
+    return 0;
+}
+```
+
+---
+
+### 15. Write a program that, given a positive integer n, computes the sum of the first n positive integers.
+
+Código extraído:
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n[4];
+    n[0] = 4;
+    n[1] = 2;
+    n[2] = 9;
+    n[3] = 1;
+
+    int i, j, pivot, temp;
+    for (i = 0; i < 3; i++)
+    {
+        for (j = i + 1; j < 4; j++)
+        {
+            if (n[i] < n[j])
+            {
+                temp = n[i];
+                n[i] = n[j];
+                n[j] = temp;
+            }
+        }
+    }
+
+    printf("%i %i %i %i\n", n[3], n[2], n[1], n[0]);
+
+    return 0;
+}
+```
+
+---
+
+### 15. Write a program that, given a positive integer n, computes the sum of the first n positive integers.
+
+Esperado: 9 4 2 1
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 3] Write a program in the language c that Use the Quick Sort algorithm to sort the following list of numbers in descending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 9 4 2 1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+You are allowed to use the following variables:
+- a, b, c, d, e
+- i, j, k, l, m, n
+- A, B, C, D, E
+- x, y, z
+
+
+Your program must be named **quickSort** and should be placed in the directory **quickSort.c**.
+
+
+**Input**
+
+Your program does not receive any input.
+
+
+**Output**
+
+Your program must print the following line:
+
+9 4 2 1
+
+
+**Constraints**
+
+- 1 ≤ x ≤ 9
+- 1 ≤ y ≤ 9
+- 1 ≤ z ≤ 9
+
+
+**Sample Input**
+```
+4
+2
+9
+1
+```
+
+**Sample Output**
+```
+9 4 2 1
+```
+
+
+
+### QuickSort
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+// Quick sort function to sort the array in descending order
+void QuickSort(int arr[], int start, int end) {
+
+Código extraído:
+#include <stdio.h>
+#include <stdlib.h>
+
+// Quick sort function to sort the array in descending order
+void QuickSort(int arr[], int start, int end) {
+
+Esperado: 9 4 2 1
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 1] Write a program in the language bash that Use the Quick Sort algorithm to sort the following list of numbers in descending order: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 9 4 2 1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+Your answer should be submitted as a single text file.
+
+<div class="hint">
+  To sort a list of numbers in descending order, use the following command:
+  ```bash
+  sort -r
+  ```
+  For more information on the sort command, see the man page for sort.
+</div>
+
+<div class="hint">
+  To sort the list in descending order, first you need to save the list into a variable.
+  ```bash
+  mylist="4 2 9 1"
+  ```
+  You can then print out the sorted list by using the following command:
+  ```bash
+  echo "${mylist}" | sort -r
+  ```
+  The ${} part of the variable name allows you to use the variable without quotes around it.
+  You will find more information on variable name expansion here.
+</div>
+
+<div class="hint">
+  To save a variable into a variable, you need to use the following syntax:
+  ```bash
+  var1=${var2}
+  ```
+  For more information on variable name expansion, see the man page for printf.
+
+Código extraído:
+sort -r
+
+Esperado: 9 4 2 1
+Salida   : [4, 2, 9, 1]
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 1] Write a program in the language python that Develop a function that uses sequential search to return the position of number 9 in the following list: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+def sequential_search(x):
+\t"""Uses sequential search to return the position of number 9 in the following list: [4, 2, 9, 1]"""
+\tif x[0] == 9:
+\t\treturn 0
+\tfor i in range(len(x)):
+\t\tif x[i] == 9:
+\t\t\treturn i
+\treturn "not found"
+
+x = [4, 2, 9, 1]
+print(sequential_search(x))
+
+
+
+Write a program that uses insertion sort to sort a list of integers. The program must print only the final result (no extra text, no explanations, no labels), and provide the following expected output: [1, 2, 4, 9].
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+def insertion_sort(x):
+\t"""Sorts a list of integers"""
+\tfor i in range(len(x)):
+\t
+
+Código extraído:
+def sequential_search(x):
+\t"""Uses sequential search to return the position of number 9 in the following list: [4, 2, 9, 1]"""
+\tif x[0] == 9:
+\t\treturn 0
+\tfor i in range(len(x)):
+\t\tif x[i] == 9:
+\t\t\treturn i
+\treturn "not found"
+
+x = [4, 2, 9, 1]
+print(sequential_search(x))
+
+
+
+Write a program that uses insertion sort to sort a list of integers. The program must print only the final result (no extra text, no explanations, no labels), and provide the following expected output: [1, 2, 4, 9].
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+def insertion_sort(x):
+\t"""Sorts a list of integers"""
+\tfor i in range(len(x)):
+\t
+
+Esperado: 2
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 2] Write a program in the language python that Develop a function that uses sequential search to return the position of number 9 in the following list: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+# Task 2 - Implementing a Binary Search
+Write a program in the language python that Develop a function that uses binary search to return the position of number 9 in the following list: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+# Task 3 - Implementing a Selection Sort
+Write a program in the language python that Develop a function that implements selection sort, which takes an array of integers and returns a sorted array.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: [1, 2, 4, 9].
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+# Task 4 - Implementing a Quick Sort
+Write a program in the language python that Develop a function that implements quick sort, which takes an array of integers and
+
+Código extraído:
+# Task 2 - Implementing a Binary Search
+Write a program in the language python that Develop a function that uses binary search to return the position of number 9 in the following list: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+# Task 3 - Implementing a Selection Sort
+Write a program in the language python that Develop a function that implements selection sort, which takes an array of integers and returns a sorted array.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: [1, 2, 4, 9].
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+# Task 4 - Implementing a Quick Sort
+Write a program in the language python that Develop a function that implements quick sort, which takes an array of integers and
+
+Esperado: 2
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 3] Write a program in the language python that Develop a function that uses sequential search to return the position of number 9 in the following list: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+**Note:**
+
+If you need to see a more detailed solution, see the [Wikipedia page on sequential search](https://en.wikipedia.org/wiki/Linear_search).
+
+**Hint:**
+
+You can use the following template to write your code:
+
+```py
+def sequential_search(sequence, item):
+    for i in range(len(sequence)):
+        if sequence[i] == item:
+            return i
+    return -1
+
+print(sequential_search([4, 2, 9, 1], 9))
+```
+
+For more information about python, see [the language documentation](https://docs.python.org/3/).
+
+## 1. Program Structure
+
+### 1.1 Functions
+
+In programming, a *function* is a piece of code that can be called multiple times. The code to be executed, and the variables it uses, are defined once, and the function is called to execute it.
+
+Functions make it easy to divide your code into pieces that perform specific tasks.
+
+### 1.2 Lists
+
+In programming, a *
+
+Código extraído:
+def sequential_search(sequence, item):
+    for i in range(len(sequence)):
+        if sequence[i] == item:
+            return i
+    return -1
+
+print(sequential_search([4, 2, 9, 1], 9))
+```
+
+For more information about python, see [the language documentation](https://docs.python.org/3/).
+
+## 1. Program Structure
+
+### 1.1 Functions
+
+In programming, a *function* is a piece of code that can be called multiple times. The code to be executed, and the variables it uses, are defined once, and the function is called to execute it.
+
+Functions make it easy to divide your code into pieces that perform specific tasks.
+
+### 1.2 Lists
+
+In programming, a *
+
+Esperado: 2
+Salida   : 
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 2] Write a program in the language c that Develop a function that uses sequential search to return the position of number 9 in the following list: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+```c
+#include <stdio.h>
+
+int sequentialSearch(int list[], int n, int searchElement) {
+
+    for (int i = 0; i < n; i++) {
+        if (list[i] == searchElement) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main(void) {
+    int arr[4] = {4, 2, 9, 1};
+    int searchElement = 9;
+    printf("%d", sequentialSearch(arr, 4, searchElement));
+
+    return 0;
+}
+```
+
+
+Write a program in the language c that develop a function that uses binary search to return the position of number 9 in the following list: [4, 2, 9, 1]. The program must print only the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+```c
+#include <stdio.h
+
+Código extraído:
+#include <stdio.h>
+
+int sequentialSearch(int list[], int n, int searchElement) {
+
+    for (int i = 0; i < n; i++) {
+        if (list[i] == searchElement) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main(void) {
+    int arr[4] = {4, 2, 9, 1};
+    int searchElement = 9;
+    printf("%d", sequentialSearch(arr, 4, searchElement));
+
+    return 0;
+}
+
+Esperado: 2
+Salida   : 2
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 3] Write a program in the language c that Develop a function that uses sequential search to return the position of number 9 in the following list: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+## Solution
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int sequential_search(int *array, int key, int size);
+
+int main() {
+
+    int list[4] = {4, 2, 9, 1};
+    int key = 9;
+    int size = 4;
+    int result = sequential_search(list, key, size);
+
+    printf("%d", result);
+
+    return 0;
+}
+
+int sequential_search(int *array, int key, int size) {
+    for (int i = 0; i < size; i++) {
+        if (array[i] == key) {
+            return i;
+        }
+    }
+    return -1;
+}
+```
+
+## Explanation
+
+The method is fairly simple. We use a loop to look through the list and check if the list contains a match. If the value in the array is equal to the key we want to return the position of the key. If the loop ends and the key was not found, we return -
+
+Código extraído:
+#include <stdio.h>
+#include <stdlib.h>
+
+int sequential_search(int *array, int key, int size);
+
+int main() {
+
+    int list[4] = {4, 2, 9, 1};
+    int key = 9;
+    int size = 4;
+    int result = sequential_search(list, key, size);
+
+    printf("%d", result);
+
+    return 0;
+}
+
+int sequential_search(int *array, int key, int size) {
+    for (int i = 0; i < size; i++) {
+        if (array[i] == key) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+Esperado: 2
+Salida   : 2
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 1] Write a program in the language bash that Develop a function that uses sequential search to return the position of number 9 in the following list: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+```
+#!/bin/bash
+
+# Declare the list of numbers that we will be searching
+list=("4" "2" "9" "1")
+
+# Define a function that will receive the list, the number to search, and the index where to start the search
+function sequentialSearch() {
+    for ((i=0; i<${#list[@]}; i++)) {
+        if [[ ${list[i]} == "$2" ]] ; then
+            echo "$1" "$2" "$i"
+        fi
+    }
+}
+
+# Call the function with the variables list and number
+sequentialSearch "$list" "9"
+```
+
+Output
+```
+4 9 2
+```
+
+### 2.7.2 [Increment a number](https://www.hackerrank.com/challenges/bash-tutorials-increment-a-number/problem)
+
+Write a program in the language bash that **Increment a number**.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 6.
+
+Código extraído:
+#!/bin/bash
+
+# Declare the list of numbers that we will be searching
+list=("4" "2" "9" "1")
+
+# Define a function that will receive the list, the number to search, and the index where to start the search
+function sequentialSearch() {
+    for ((i=0; i<${#list[@]}; i++)) {
+        if [[ ${list[i]} == "$2" ]] ; then
+            echo "$1" "$2" "$i"
+        fi
+    }
+}
+
+# Call the function with the variables list and number
+sequentialSearch "$list" "9"
+```
+
+Output
+```
+4 9 2
+```
+
+### 2.7.2 [Increment a number](https://www.hackerrank.com/challenges/bash-tutorials-increment-a-number/problem)
+
+Write a program in the language bash that **Increment a number**.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 6.
+
+Esperado: 2
+Salida   : 4 9 2
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 2] Write a program in the language bash that Develop a function that uses sequential search to return the position of number 9 in the following list: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Solution
+```bash
+#!/bin/bash
+
+# Write your program here
+
+seq=4,2,9,1
+
+for ((i=0; i<${#seq[@]}; i++)); do
+  if [ "$seq[$i]" == 9 ]; then
+    echo $i
+    exit 0
+  fi
+done
+echo 0
+```
+
+### Code Explanation
+
+1. Store the sequence in a variable
+2. Iterate through the sequence
+3. Compare each element with 9
+4. If 9 is found then stop the loop and print the index
+5. If 9 is not found, print 0 (the index of the last element + 1)
+
+### Comments
+
+A Bash script is a program that executes a series of commands. It is very common for Bash scripts to perform simple operations like listing the contents of a directory, copying a file, and printing text.
+
+In the above program, we store the sequence in a variable and then iterate through the sequence.
+
+We use a C-like for loop to iterate through the sequence. We use the `${#seq[@]
+
+Código extraído:
+#!/bin/bash
+
+# Write your program here
+
+seq=4,2,9,1
+
+for ((i=0; i<${#seq[@]}; i++)); do
+  if [ "$seq[$i]" == 9 ]; then
+    echo $i
+    exit 0
+  fi
+done
+echo 0
+
+Esperado: 2
+Salida   : 0
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 3] Write a program in the language bash that Develop a function that uses sequential search to return the position of number 9 in the following list: [4, 2, 9, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+Here is the start of the code:
+
+```bash
+#!/bin/bash
+
+find_9() {
+    local arr=("$@")
+    local i=0
+    local length=${#arr[@]}
+    local position=0
+    while [ $i -lt $length ]; do
+        if [[ ${arr[$i]} == 9 ]]; then
+            position=$i
+            echo $position
+            break
+        fi
+        (( i++ ))
+    done
+}
+```
+
+You can add the main function with the following lines of code:
+
+```bash
+...
+
+main() {
+    local list=(4 2 9 1)
+    find_9 "${list[@]}"
+}
+```
+
+You may now run your program with the following command:
+
+```bash
+./bash-sequential-search.sh
+```
+
+Here is the full code:
+
+```bash
+#!/bin/bash
+
+find_9() {
+    local arr=("$@")
+    local i=0
+    local length=${#arr[@]}
+    local position=0
+    while [ $
+
+Código extraído:
+#!/bin/bash
+
+find_9() {
+    local arr=("$@")
+    local i=0
+    local length=${#arr[@]}
+    local position=0
+    while [ $i -lt $length ]; do
+        if [[ ${arr[$i]} == 9 ]]; then
+            position=$i
+            echo $position
+            break
+        fi
+        (( i++ ))
+    done
+}
+
+Esperado: 2
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 1] Write a program in the language python that Implement a linear search that returns the position of number 7 in the following list, or -1 if not found: [3, 8, 4, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: -1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+## Input Format
+
+No input is given for this challenge.
+
+## Output Format
+
+Your program must print only the final result, which should be -1.
+
+## Sample Input
+
+No input is given for this challenge.
+
+## Sample Output
+
+Your program must print only the final result, which should be -1.
+
+## Explanation
+
+### Example 1
+
+The list that was provided to the program is: [3, 8, 4, 1]. The value 7 is not in this list.
+
+### Example 2
+
+The list that was provided to the program is: [3, 8, 4, 1]. The value 1 is in this list, so the position is 3.
+
+### Example 3
+
+The list that was provided to the program is: [3, 8, 4, 1]. The value 3 is in this list, so the position is 0.
+
+### Example 4
+
+The list that was provided to the program is: [3, 8, 4, 1]. The value 8 is in this list, so
+
+Código extraído:
+## Input Format
+
+No input is given for this challenge.
+
+## Output Format
+
+Your program must print only the final result, which should be -1.
+
+## Sample Input
+
+No input is given for this challenge.
+
+## Sample Output
+
+Your program must print only the final result, which should be -1.
+
+## Explanation
+
+### Example 1
+
+The list that was provided to the program is: [3, 8, 4, 1]. The value 7 is not in this list.
+
+### Example 2
+
+The list that was provided to the program is: [3, 8, 4, 1]. The value 1 is in this list, so the position is 3.
+
+### Example 3
+
+The list that was provided to the program is: [3, 8, 4, 1]. The value 3 is in this list, so the position is 0.
+
+### Example 4
+
+The list that was provided to the program is: [3, 8, 4, 1]. The value 8 is in this list, so
+
+Esperado: -1
+Salida   : 
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 1] Write a program in the language c that Implement a linear search that returns the position of number 7 in the following list, or -1 if not found: [3, 8, 4, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: -1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Solution
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+    int nums[] = {3, 8, 4, 1};
+    int n = 4, number = 7, i = 0;
+
+    for(i = 0; i < n; i++)
+    {
+        if(nums[i] == number)
+        {
+            printf("%d\n", i);
+            break;
+        }
+    }
+    if(i == n)
+        printf("-1\n");
+}
+```
+
+## 6.
+
+Given an array a of n integers, write a program that calculates the sum of all the elements of the array that are greater than 100.
+
+The input is in the form of a single line containing n space-separated integers, where each number is a valid signed 32-bit integer.
+
+The output is a single line containing the sum of all the elements of the array that are greater than 100
+
+Código extraído:
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+    int nums[] = {3, 8, 4, 1};
+    int n = 4, number = 7, i = 0;
+
+    for(i = 0; i < n; i++)
+    {
+        if(nums[i] == number)
+        {
+            printf("%d\n", i);
+            break;
+        }
+    }
+    if(i == n)
+        printf("-1\n");
+}
+
+Esperado: -1
+Salida   : -1
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 2] Write a program in the language c that Implement a linear search that returns the position of number 7 in the following list, or -1 if not found: [3, 8, 4, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: -1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+The C code should be as simple as possible, preferably less than 20 lines.
+
+Your code should print only the final result, which is -1 in the example shown above.
+
+Your code should not include any function that is not part of C's standard library.
+
+Your code should not use the preprocessor directive #include.
+
+Your code should not contain any loops, or any other statement except for the statements in the following code snippet:
+```
+int main() {
+    // Your code goes here
+    return 0;
+}
+```
+
+Your code should not contain any variables.
+
+Your code should be tested with a compiler and run successfully.
+
+### Solution
+
+To run the code, use:
+```
+gcc solution.c
+```
+
+Then run the executable:
+```
+./a.out
+```
+
+You should get the following output:
+```
+-1
+```
+
+### Hints
+
+This problem is not as hard as it seems at first.
+
+Hint 1: Remember that an integer is just a number. You can just print it like you would print any number.
+
+Hint 2:
+
+Código extraído:
+int main() {
+    // Your code goes here
+    return 0;
+}
+```
+
+Your code should not contain any variables.
+
+Your code should be tested with a compiler and run successfully.
+
+### Solution
+
+To run the code, use:
+```
+gcc solution.c
+```
+
+Then run the executable:
+```
+./a.out
+```
+
+You should get the following output:
+```
+-1
+```
+
+### Hints
+
+This problem is not as hard as it seems at first.
+
+Hint 1: Remember that an integer is just a number. You can just print it like you would print any number.
+
+Hint 2:
+
+Esperado: -1
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 3] Write a program in the language c that Implement a linear search that returns the position of number 7 in the following list, or -1 if not found: [3, 8, 4, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: -1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+This is a challenge from the book: C Programming. A Comprehensive Guide by K.N. King. It's numbered as Challenge 3-1.
+
+I would be very happy if someone could check my code.
+
+\begin{code}
+#include <stdio.h>
+
+int LinearSearch(int [], int, int);
+
+int main(void)
+{
+    int numbers[4] = {3, 8, 4, 1};
+    int result;
+    result = LinearSearch(numbers, 4, 7);
+    printf("%d", result);
+
+    return 0;
+}
+
+int LinearSearch(int numbers[], int n, int searchFor)
+{
+    int i = 0;
+    int result = -1;
+
+    while (i < n && numbers[i] != searchFor)
+    {
+        i++;
+    }
+
+    if (i == n)
+    {
+        printf("-1");
+    }
+    else
+    {
+        result = i;
+    }
+
+    return result;
+}
+\end
+
+Código extraído:
+#include <stdio.h>
+
+int LinearSearch(int [], int, int);
+
+int main(void)
+{
+    int numbers[4] = {3, 8, 4, 1};
+    int result;
+    result = LinearSearch(numbers, 4, 7);
+    printf("%d", result);
+
+    return 0;
+}
+
+int LinearSearch(int numbers[], int n, int searchFor)
+{
+    int i = 0;
+    int result = -1;
+
+    while (i < n && numbers[i] != searchFor)
+    {
+        i++;
+    }
+
+    if (i == n)
+    {
+        printf("-1");
+    }
+    else
+    {
+        result = i;
+    }
+
+    return result;
+}
+\end
+
+Esperado: -1
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 1] Write a program in the language bash that Implement a linear search that returns the position of number 7 in the following list, or -1 if not found: [3, 8, 4, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: -1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+The program is only allowed to use the following tools:
+
+
+1. The bash shell
+
+2. The built-in command `read`
+
+3. The built-in command `echo`
+
+4. The built-in command `readarray`
+
+
+
+
+
+
+# Notes
+
+The number of elements must be evenly divisible by 2, i.e. for the list [3, 8, 4, 1] to be valid.
+
+If you find yourself in a scenario where the number of elements is not evenly divisible by 2, your program must return the output -1.
+
+
+
+# Hint
+
+Linear Search has a time complexity of O(n).
+
+
+
+
+
+# Example 1
+
+```bash
+$ readarray -t list_1 < list_1.txt
+$ search_linear_search_7_in_list.sh list_1.txt
+$ echo $?
+-1
+```
+
+
+
+# Example 2
+
+```bash
+$ readarray -t list_2 < list_2.txt
+$ search_linear_search_7_in
+
+Código extraído:
+$ readarray -t list_1 < list_1.txt
+$ search_linear_search_7_in_list.sh list_1.txt
+$ echo $?
+-1
+
+Esperado: -1
+Salida   : 
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 3] Write a program in the language bash that Implement a linear search that returns the position of number 7 in the following list, or -1 if not found: [3, 8, 4, 1].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: -1.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Output
+
+```
+-1
+```
+
+### Solution
+
+```bash
+#!/bin/bash
+
+list="3 8 4 1"
+
+function search_linear()
+{
+    local list=$1
+    local number=$2
+    local index=-1
+
+    for (( i=0; i<${#list[@]}; ++i ))
+    do
+        if [[ ${list[$i]} == $number ]]
+        then
+            index=$i
+            break
+        fi
+    done
+
+    echo $index
+}
+
+search_linear "$list" 7
+```
+
+
+### Bash Solution
+
+```bash
+#!/bin/bash
+
+list="3 8 4 1"
+
+search_linear()
+{
+    local -n list=$1
+    local number=$2
+    local -n index=$3
+
+    index=-1
+
+    for (( i=0; i<${#list[@]}; ++i ))
+    do
+        if [[ ${list[$i]} == $number ]]
+        then
+            index=$i
+            break
+
+Código extraído:
+#!/bin/bash
+
+list="3 8 4 1"
+
+function search_linear()
+{
+    local list=$1
+    local number=$2
+    local index=-1
+
+    for (( i=0; i<${#list[@]}; ++i ))
+    do
+        if [[ ${list[$i]} == $number ]]
+        then
+            index=$i
+            break
+        fi
+    done
+
+    echo $index
+}
+
+search_linear "$list" 7
+
+Esperado: -1
+Salida   : -1
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 1] Write a program in the language python that Use binary search to find the number 5 in the following sorted list: [1, 3, 5, 7, 9].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+Do not modify the input or output of the program, which are provided as-is.
+
+### 🤸🏾‍♂️Task:
+
+- Use the binary search algorithm to find the position of number 5 in the given sorted list.
+- Print the result to the standard output.
+
+### 📋Additional material
+
+- [Wikipedia: Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- [YouTube: Binary search algorithm](https://www.youtube.com/watch?v=P3YID7liBug)
+
+### 📝Notes
+
+This task is an adaptation of an exercise from the book [Python Crash Course](https://ehmatthes.github.io/pcc/index.html), where it is presented as an exercise.
+
+### 💻Run the code
+
+Open `main.py` and run the program.
+
+### 📸Preview
+
+![preview](../../assets/binary-search.png)
+
+---
+
+<div align="right">
+
+Código extraído:
+### 🤸🏾‍♂️Task:
+
+- Use the binary search algorithm to find the position of number 5 in the given sorted list.
+- Print the result to the standard output.
+
+### 📋Additional material
+
+- [Wikipedia: Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- [YouTube: Binary search algorithm](https://www.youtube.com/watch?v=P3YID7liBug)
+
+### 📝Notes
+
+This task is an adaptation of an exercise from the book [Python Crash Course](https://ehmatthes.github.io/pcc/index.html), where it is presented as an exercise.
+
+### 💻Run the code
+
+Open `main.py` and run the program.
+
+### 📸Preview
+
+![preview](../../assets/binary-search.png)
+
+---
+
+<div align="right">
+
+Esperado: 2
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 2] Write a program in the language python that Use binary search to find the number 5 in the following sorted list: [1, 3, 5, 7, 9].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+Your program should be written in the language python.
+
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int i,j,n;
+    int a[5]={1,3,5,7,9};
+    printf("Enter number to be searched:");
+    scanf("%d",&n);
+    int low=0;
+    int high=4;
+    for(i=1;i<=10;i++)
+    {
+        j=(low+high)/2;
+        if(a[j]==n)
+        {
+            printf("The number %d is at position %d",n,j+1);
+            break;
+        }
+        else if(a[j]>n)
+        {
+            high=j-1;
+        }
+        else
+        {
+            low=j+1;
+        }
+    }
+    return 0;
+}
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int i,j,
+
+Código extraído:
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int i,j,n;
+    int a[5]={1,3,5,7,9};
+    printf("Enter number to be searched:");
+    scanf("%d",&n);
+    int low=0;
+    int high=4;
+    for(i=1;i<=10;i++)
+    {
+        j=(low+high)/2;
+        if(a[j]==n)
+        {
+            printf("The number %d is at position %d",n,j+1);
+            break;
+        }
+        else if(a[j]>n)
+        {
+            high=j-1;
+        }
+        else
+        {
+            low=j+1;
+        }
+    }
+    return 0;
+}
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int i,j,
+
+Esperado: 2
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 3] Write a program in the language python that Use binary search to find the number 5 in the following sorted list: [1, 3, 5, 7, 9].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+Do not change the expected output at all.
+
+You can use the following code as a starting point for your program:
+
+```
+    def binarySearch(l, x):
+        first = 0
+        last = len(l)-1
+        while first <= last:
+            mid = (first + last) // 2
+            if l[mid] < x:
+                first = mid + 1
+            elif l[mid] > x:
+                last = mid - 1
+            else:
+                return mid
+        return -1
+
+    l = [1, 3, 5, 7, 9]
+    x = 5
+    r = binarySearch(l, x)
+    print(r)
+
+```
+
+
+
+
+Run the code and check the output of the program. Do you get the expected output?
+
+
+
+The function binarySearch should return the index of the number x. If it is not in the list, return -1. You are allowed to use a loop, recursion, or both.
+
+
+
+
+
+### Hints
+
+The binary search algorithm consists of the following steps:
+
+Código extraído:
+def binarySearch(l, x):
+        first = 0
+        last = len(l)-1
+        while first <= last:
+            mid = (first + last) // 2
+            if l[mid] < x:
+                first = mid + 1
+            elif l[mid] > x:
+                last = mid - 1
+            else:
+                return mid
+        return -1
+
+    l = [1, 3, 5, 7, 9]
+    x = 5
+    r = binarySearch(l, x)
+    print(r)
+
+```
+
+
+
+
+Run the code and check the output of the program. Do you get the expected output?
+
+
+
+The function binarySearch should return the index of the number x. If it is not in the list, return -1. You are allowed to use a loop, recursion, or both.
+
+
+
+
+
+### Hints
+
+The binary search algorithm consists of the following steps:
+
+Esperado: 2
+Salida   : 
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 2] Write a program in the language c that Use binary search to find the number 5 in the following sorted list: [1, 3, 5, 7, 9].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+You may add any files and/or directories you need to complete the task.
+
+The following code will be added:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    // Write your code here
+    printf("%d", 5);
+}
+```
+
+The following task will be added:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n = 10;
+    int* A = malloc(sizeof(int) * n);
+    A[0] = 1;
+    A[1] = 3;
+    A[2] = 5;
+    A[3] = 7;
+    A[4] = 9;
+    A[5] = 11;
+    A[6] = 13;
+    A[7] = 15;
+    A[8] = 17;
+    A[9] = 19;
+
+    // Write your code here
+    printf("%d", 19);
+}
+
+Código extraído:
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    // Write your code here
+    printf("%d", 5);
+}
+
+Esperado: 2
+Salida   : 5
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 3] Write a program in the language c that Use binary search to find the number 5 in the following sorted list: [1, 3, 5, 7, 9].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+#include <stdio.h>
+
+#define size 5
+
+int main (){
+    int v[size] = {1, 3, 5, 7, 9};
+    int n = 5;
+    int i = 0;
+    int j = size;
+    int m;
+    while (i < j){
+        m = (i + j)/2;
+        if (v[m] < n){
+            i = m + 1;
+        }
+        else if (v[m] > n){
+            j = m - 1;
+        }
+        else {
+            printf("The result is: %d", m);
+            break;
+        }
+    }
+    return 0;
+}
+
+
+#include <stdio.h>
+
+#define size 5
+
+int main (){
+    int v[size] = {1, 3, 5, 7, 9};
+    int n = 5;
+    int i = 0;
+    int j = size;
+    int m;
+    while (i < j
+
+Código extraído:
+#include <stdio.h>
+
+#define size 5
+
+int main (){
+    int v[size] = {1, 3, 5, 7, 9};
+    int n = 5;
+    int i = 0;
+    int j = size;
+    int m;
+    while (i < j){
+        m = (i + j)/2;
+        if (v[m] < n){
+            i = m + 1;
+        }
+        else if (v[m] > n){
+            j = m - 1;
+        }
+        else {
+            printf("The result is: %d", m);
+            break;
+        }
+    }
+    return 0;
+}
+
+
+#include <stdio.h>
+
+#define size 5
+
+int main (){
+    int v[size] = {1, 3, 5, 7, 9};
+    int n = 5;
+    int i = 0;
+    int j = size;
+    int m;
+    while (i < j
+
+Esperado: 2
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 1] Write a program in the language bash that Use binary search to find the number 5 in the following sorted list: [1, 3, 5, 7, 9].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Input
+
+There is no input for your program.
+
+### Output
+
+Write only the final result in the output.
+
+```bash
+[1, 3, 5, 7, 9]
+# output: 2
+```
+
+### Constraints
+- The list will always be sorted in ascending order
+- The element you are searching for will always be in the list
+
+### Example
+
+| Input | Output |
+| ----- | ------ |
+| 1 2 3 4 5 | 4 |
+| 0 1 2 3 4 5 | 2 |
+| 1 2 3 4 5 6 7 8 9 | 3 |
+| 1 3 5 7 9 | 2 |
+
+### Hints
+- [Arrays](https://www.w3schools.com/python/python_lists.asp) in Python
+- [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- [Arrays](https://www.w3schools.
+
+Código extraído:
+[1, 3, 5, 7, 9]
+# output: 2
+
+Esperado: 2
+Salida   : 
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 2] Write a program in the language bash that Use binary search to find the number 5 in the following sorted list: [1, 3, 5, 7, 9].
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 2.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+[1, 3, 5, 7, 9]
+
+This is the code I have so far:
+
+\begin{code}
+#!/bin/bash
+
+for i in {1..9}
+do
+    echo -n "$i "
+done
+
+echo
+
+echo -n "Number to find: "
+read num
+
+count=0
+
+echo -n "Binary search [1, 3, 5, 7, 9] for number: $num"
+
+until [ "$count" -eq 5 ]
+do
+
+    middle=$((count+count+1))
+
+    echo -n "$num is at $middle"
+
+    if [ "$num" -gt "$middle" ]
+    then
+
+        echo -n " - num is greater than $middle"
+        count=$((count+1))
+
+    elif [ "$num" -lt "$middle" ]
+    then
+
+        echo -n " - num is less than $middle"
+        count=$((count-1))
+
+    elif [ "$num" -eq "$middle" ]
+    then
+
+        echo
+
+Código extraído:
+#!/bin/bash
+
+for i in {1..9}
+do
+    echo -n "$i "
+done
+
+echo
+
+echo -n "Number to find: "
+read num
+
+count=0
+
+echo -n "Binary search [1, 3, 5, 7, 9] for number: $num"
+
+until [ "$count" -eq 5 ]
+do
+
+    middle=$((count+count+1))
+
+    echo -n "$num is at $middle"
+
+    if [ "$num" -gt "$middle" ]
+    then
+
+        echo -n " - num is greater than $middle"
+        count=$((count+1))
+
+    elif [ "$num" -lt "$middle" ]
+    then
+
+        echo -n " - num is less than $middle"
+        count=$((count-1))
+
+    elif [ "$num" -eq "$middle" ]
+    then
+
+        echo
+
+Esperado: 2
+Salida   : 1 2 3 4 5 6 7 8 9 
+Number to find: Binary search [1, 3, 5, 7, 9] for number: [1, 3, 5, 7, 9]
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 1] Write a program in the language python that Use recursion to determine whether the following string is a palindrome: anita lava la tina.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+**Note:** Be sure to check for spelling and grammar. The program may be tested on its ability to print the correct output.
+
+### Note
+
+The function should accept the string as input and return True or False.
+
+### Input Format
+
+A single line containing a string, e.g., **anita lava la tina**.
+
+### Output Format
+
+A single line containing True or False (without quotes), i.e., **True** or **False**.
+
+### Sample Input
+
+```
+anita lava la tina
+```
+
+### Sample Output
+
+```
+True
+```
+
+### Solution
+
+function isPalindrome(s):
+
+    if len(s) <= 1:
+        return True
+    if s[0] != s[-1]:
+        return False
+    return isPalindrome(s[1:-1])
+
+### Note
+
+The function will recurse until the string is exhausted, or until two characters are found to be unequal. At this point, the function will return False if the string is not a palindrome; if it
+
+Código extraído:
+### Note
+
+The function should accept the string as input and return True or False.
+
+### Input Format
+
+A single line containing a string, e.g., **anita lava la tina**.
+
+### Output Format
+
+A single line containing True or False (without quotes), i.e., **True** or **False**.
+
+### Sample Input
+
+```
+anita lava la tina
+```
+
+### Sample Output
+
+```
+True
+```
+
+### Solution
+
+function isPalindrome(s):
+
+    if len(s) <= 1:
+        return True
+    if s[0] != s[-1]:
+        return False
+    return isPalindrome(s[1:-1])
+
+### Note
+
+The function will recurse until the string is exhausted, or until two characters are found to be unequal. At this point, the function will return False if the string is not a palindrome; if it
+
+Esperado: True
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 2] Write a program in the language python that Use recursion to determine whether the following string is a palindrome: anita lava la tina.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+The final line of your program must be: print(is_palindrome('anita lava la tina')).
+
+### Task 1.4
+
+Write a program in the language python that Use recursion to determine whether the following string is a palindrome:
+
+```
+
+the quick brown fox jumps over the lazy dog
+
+```
+
+The program must print only the final result (no extra text, no explanations, no labels), and provide the following expected output: False.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks. The final line of your program must be: print(is_palindrome('the quick brown fox jumps over the lazy dog')).
+
+### Task 1.5
+
+Write a program in the language python that Use recursion to determine whether the following string is a palindrome:
+
+```
+
+No lemon, no melon, no lone
+
+```
+
+The program must print only the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output
+
+Código extraído:
+### Task 1.4
+
+Write a program in the language python that Use recursion to determine whether the following string is a palindrome:
+
+```
+
+the quick brown fox jumps over the lazy dog
+
+```
+
+The program must print only the final result (no extra text, no explanations, no labels), and provide the following expected output: False.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks. The final line of your program must be: print(is_palindrome('the quick brown fox jumps over the lazy dog')).
+
+### Task 1.5
+
+Write a program in the language python that Use recursion to determine whether the following string is a palindrome:
+
+```
+
+No lemon, no melon, no lone
+
+```
+
+The program must print only the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output
+
+Esperado: True
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 3] Write a program in the language python that Use recursion to determine whether the following string is a palindrome: anita lava la tina.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+Your program must be written in one file called palindrome_python.py.
+
+The following is an example of the expected output from the expected input:
+
+	True
+
+The following is a sample of the code your code must be similar to (including the number of spaces):
+
+```python
+def isPalindrome(string):
+	if len(string) <= 1:
+		return True
+	elif string[0] != string[-1]:
+		return False
+	else:
+		return isPalindrome(string[1:-1])
+
+
+print(isPalindrome('anita lava la tina'))
+```
+
+Your code must be similar to the following:
+
+```python
+def isPalindrome(string):
+	if len(string) <= 1:
+		return True
+	elif string[0] != string[-1]:
+		return False
+	else:
+		return isPalindrome(string[1:-1])
+
+
+print(isPalindrome('anita lava la tina'))
+```
+
+
+*Note: You do not have to put your name in
+
+Código extraído:
+def isPalindrome(string):
+	if len(string) <= 1:
+		return True
+	elif string[0] != string[-1]:
+		return False
+	else:
+		return isPalindrome(string[1:-1])
+
+
+print(isPalindrome('anita lava la tina'))
+
+Esperado: True
+Salida   : False
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 1] Write a program in the language c that Use recursion to determine whether the following string is a palindrome: anita lava la tina.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Sample Output
+
+```
+True
+```
+
+### Sample Input
+
+```
+anita lava la tina
+```
+
+### Sample Output
+
+```
+True
+```
+
+### Code
+
+```C
+#include <stdio.h>
+#include <string.h>
+int palindrome(char str[100]);
+int main() {
+    char str[100];
+    int a;
+    scanf("%s", str);
+    a = palindrome(str);
+    if (a == 1)
+        printf("True\n");
+    return 0;
+}
+int palindrome(char str[100]) {
+    int a = strlen(str);
+    if (a == 0)
+        return 0;
+    else if (a == 1)
+        return 1;
+    else if (a == 2)
+        return 0;
+    else {
+        if (str[0] == str[a - 1])
+            return palindrome(str + 1, a - 2);
+
+Código extraído:
+#include <stdio.h>
+#include <string.h>
+int palindrome(char str[100]);
+int main() {
+    char str[100];
+    int a;
+    scanf("%s", str);
+    a = palindrome(str);
+    if (a == 1)
+        printf("True\n");
+    return 0;
+}
+int palindrome(char str[100]) {
+    int a = strlen(str);
+    if (a == 0)
+        return 0;
+    else if (a == 1)
+        return 1;
+    else if (a == 2)
+        return 0;
+    else {
+        if (str[0] == str[a - 1])
+            return palindrome(str + 1, a - 2);
+
+Esperado: True
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 1] Write a program in the language bash that Use recursion to determine whether the following string is a palindrome: anita lava la tina.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### 2. 2017-12-27-161751.c
+```c
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#define MAX_LEN 100
+
+int isPalindrome(char *str) {
+    if (str == NULL || strlen(str) <= 1) return 1;
+    if (tolower(str[0]) != tolower(str[strlen(str) - 1])) return 0;
+    return isPalindrome(str + 1);
+}
+
+int main() {
+    char str[MAX_LEN];
+    scanf("%[^\n]s", str);
+    printf("%d", isPalindrome(str));
+}
+```
+### 3. 2017-12-27-161751.java
+```java
+import java.util.Scanner;
+
+public class Palindrome {
+
+    public static void main(String[] args) {
+        Scanner scanner =
+
+Código extraído:
+if (str == NULL || strlen(str) <= 1) return 1;
+    if (tolower(str[0]) != tolower(str[strlen(str) - 1])) return 0;
+    return isPalindrome(str + 1);
+}
+
+int main() {
+    char str[MAX_LEN];
+    scanf("%[^\n]s", str);
+    printf("%d", isPalindrome(str));
+}
+```
+### 3. 2017-12-27-161751.java
+```java
+import java.util.Scanner;
+
+public class Palindrome {
+
+    public static void main(String[] args) {
+        Scanner scanner =
+
+Esperado: True
+Salida   : 
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 2] Write a program in the language bash that Use recursion to determine whether the following string is a palindrome: anita lava la tina.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+**Tip**: The string is palindrome if and only if the reverse of the string is equal to the string itself.
+
+**Expected output**
+
+```bash
+$ ./p12.sh 
+True
+```
+
+**Note**: Your program must use recursion.
+
+**Requirements**:
+
+- Your program must be called p12.sh.
+- You are only allowed to use the following tools:
+  - echo
+  - if
+  - [[
+  - -n
+  -  &&
+  - =
+  -  -z
+  - [
+
+## Sample solution
+
+```bash
+#!/usr/bin/env bash
+
+is_palindrome() {
+  if [ $# -eq 1 ]; then
+    echo "True"
+    return
+  fi
+
+  local first_char=$1
+  shift
+  local last_char=$1
+
+  if [ $first_char = $last_char ]; then
+    is_palindrome $*
+  else
+    echo "False"
+  fi
+}
+
+if [[ -n $1 ]]; then
+
+Código extraído:
+$ ./p12.sh 
+True
+
+Esperado: True
+Salida   : 
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 3] Write a program in the language bash that Use recursion to determine whether the following string is a palindrome: anita lava la tina.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Note
+
+If the final output is not "True", the program must print "False".
+
+**Note**: The exercise above is provided in the language **Bash**. It can be useful to refer to the [bash syntax reference](https://www.gnu.org/software/bash/manual/bash.html#index-syntax) in order to find the right syntax for a task.
+
+### Expected output
+
+    True
+
+### Rationale
+
+Here is a short explanation of the solution.
+
+### Solution
+
+    #! /bin/bash
+    function palindrome() {
+        # base case: if the string is a single character
+        if [ ${#1} -eq 1 ]; then
+            echo True
+            return 0
+        fi
+        # check the first and last character
+        if [ "${1:0:1}" == "${1: -1}" ]; then
+            palindrome "${1:1:-1}"
+        else
+            echo False
+        fi
+    }
+    palindrome anita lava la tina
+
+
+
+
+## 5. Write a recursive program
+
+Código extraído:
+#! /bin/bash
+    function palindrome() {
+        # base case: if the string is a single character
+        if [ ${#1} -eq 1 ]; then
+            echo True
+            return 0
+        fi
+        # check the first and last character
+        if [ "${1:0:1}" == "${1: -1}" ]; then
+            palindrome "${1:1:-1}"
+        else
+            echo False
+        fi
+    }
+    palindrome anita lava la tina
+
+
+
+
+## 5. Write a recursive program
+
+Esperado: True
+Salida   : False
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 1] Write a program in the language python that Implement a recursive function that calculates the nth term of the Fibonacci sequence for the following position: 6.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+Your program must be submitted in a single file. The file should be named assignment3.py and must be in the same folder as this README file.
+
+Make sure you read the **README.md** file in the **same folder** as this README file before you start your program.
+
+### Hint
+
+The recursive function to calculate the nth term of the Fibonacci sequence is called fib() and is already implemented in python. 
+
+To use it in your program you must first import the fibonacci module from the math library.
+
+To get the output we want you should calculate the 6th term of the fibonacci sequence using the fib() function.
+
+### Example
+
+**Input:** 
+
+	from math import fib
+	fib(6)
+	
+**Output:** 8
+
+### Additional Notes
+
+If you have any questions about this problem, you can find me at **m
+
+Código extraído:
+### Hint
+
+The recursive function to calculate the nth term of the Fibonacci sequence is called fib() and is already implemented in python. 
+
+To use it in your program you must first import the fibonacci module from the math library.
+
+To get the output we want you should calculate the 6th term of the fibonacci sequence using the fib() function.
+
+### Example
+
+**Input:** 
+
+	from math import fib
+	fib(6)
+	
+**Output:** 8
+
+### Additional Notes
+
+If you have any questions about this problem, you can find me at **m
+
+Esperado: 8
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 2] Write a program in the language python that Implement a recursive function that calculates the nth term of the Fibonacci sequence for the following position: 6.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+'''
+
+# Code here
+def fibonacci(n):
+    if n==1:
+        return 1
+    elif n==2:
+        return 1
+    else:
+        return fibonacci(n-1)+fibonacci(n-2)
+
+print(fibonacci(6))
+
+'''
+Write a function called **difference** that computes and returns the difference between the numbers in a two-element array.
+The function should take in two numbers as arguments and return their difference.
+'''
+
+# Code here
+def difference(a,b):
+    return a-b
+
+print(difference(2,3))
+
+'''
+Write a recursive function called **factorial** that computes and returns the product of the numbers in a list.
+The function should take in a list of numbers as arguments and return the product.
+'''
+
+# Code here
+def factorial(num):
+    if num == 1:
+        return num
+    else:
+        return num*factorial(num-1)
+
+print(factorial(4))
+
+'''
+Write a recursive function called **square
+
+Código extraído:
+# Code here
+def fibonacci(n):
+    if n==1:
+        return 1
+    elif n==2:
+        return 1
+    else:
+        return fibonacci(n-1)+fibonacci(n-2)
+
+print(fibonacci(6))
+
+'''
+Write a function called **difference** that computes and returns the difference between the numbers in a two-element array.
+The function should take in two numbers as arguments and return their difference.
+'''
+
+# Code here
+def difference(a,b):
+    return a-b
+
+print(difference(2,3))
+
+'''
+Write a recursive function called **factorial** that computes and returns the product of the numbers in a list.
+The function should take in a list of numbers as arguments and return the product.
+'''
+
+# Code here
+def factorial(num):
+    if num == 1:
+        return num
+    else:
+        return num*factorial(num-1)
+
+print(factorial(4))
+
+'''
+Write a recursive function called **square
+
+Esperado: 8
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 3] Write a program in the language python that Implement a recursive function that calculates the nth term of the Fibonacci sequence for the following position: 6.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Sample output
+
+```
+8
+```
+
+### What is Fibonacci sequence?
+
+The Fibonacci sequence is the series of numbers where each number is the sum of the previous two.
+
+For example, the sequence of numbers Fibonacci numbers is as follows:
+
+```
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 35245
+
+Código extraído:
+### Sample output
+
+```
+8
+```
+
+### What is Fibonacci sequence?
+
+The Fibonacci sequence is the series of numbers where each number is the sum of the previous two.
+
+For example, the sequence of numbers Fibonacci numbers is as follows:
+
+```
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 35245
+
+Esperado: 8
+Salida   : 
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 2] Write a program in the language c that Implement a recursive function that calculates the nth term of the Fibonacci sequence for the following position: 6.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+## Output
+
+```
+8
+```
+
+## Constraints
+
+**1 <= n <= 10**
+
+## Example
+
+### Input
+
+```
+4
+```
+
+### Output
+
+```
+3
+```
+
+## Hint
+
+### Iterative Solution
+
+```c
+#include <stdio.h>
+
+int Fibonacci(int n)
+{
+    if (n <= 0)
+    {
+        return 0;
+    }
+
+    if (n == 1)
+    {
+        return 1;
+    }
+
+    int f1 = 0;
+    int f2 = 1;
+    int fN = 0;
+    for (int i = 2; i <= n; i++)
+    {
+        fN = f1 + f2;
+        f1 = f2;
+        f2 = fN;
+    }
+
+    return fN;
+}
+
+int main()
+{
+    int n = 0;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+Código extraído:
+#include <stdio.h>
+
+int Fibonacci(int n)
+{
+    if (n <= 0)
+    {
+        return 0;
+    }
+
+    if (n == 1)
+    {
+        return 1;
+    }
+
+    int f1 = 0;
+    int f2 = 1;
+    int fN = 0;
+    for (int i = 2; i <= n; i++)
+    {
+        fN = f1 + f2;
+        f1 = f2;
+        f2 = fN;
+    }
+
+    return fN;
+}
+
+int main()
+{
+    int n = 0;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+Esperado: 8
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 3] Write a program in the language c that Implement a recursive function that calculates the nth term of the Fibonacci sequence for the following position: 6.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Sample input
+
+```
+6
+```
+
+### Sample output
+
+```
+8
+```
+
+### Hints
+
+```
+Use the function **int fibonacci(int)** as follows:
+int fibonacci(int n) {
+    if (n <= 1) return n;
+    return fibonacci(n-1) + fibonacci(n-2);
+}
+```
+
+### Code in C
+
+```c
+#include <stdio.h>
+
+int fibonacci(int n) {
+    if (n <= 1) return n;
+    return fibonacci(n-1) + fibonacci(n-2);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    printf("%d\n", fibonacci(n));
+    return 0;
+}
+```
+
+### Sample test
+
+```c
+gcc -o teste fibonacci.c -Wall -Werror -lm
+./teste < teste.in
+```
+
+```
+6
+8
+```
+
+Código extraído:
+#include <stdio.h>
+
+int fibonacci(int n) {
+    if (n <= 1) return n;
+    return fibonacci(n-1) + fibonacci(n-2);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    printf("%d\n", fibonacci(n));
+    return 0;
+}
+
+Esperado: 8
+Salida   : 8
+
+================================================================================
+Lenguaje: bash
+Prompt:
+[Try 3] Write a program in the language bash that Implement a recursive function that calculates the nth term of the Fibonacci sequence for the following position: 6.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: 8.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+The following is the code for the bash program:
+
+```bash
+#!/bin/bash
+#Author: Marcos Vinícius Brichta
+
+#Function for recursive calculation
+calc(){
+    #If the argument is 0, return 0
+    if [ "$1" -eq 0 ]
+    then
+        echo "0"
+        return 0
+    fi
+    #If the argument is 1, return 1
+    if [ "$1" -eq 1 ]
+    then
+        echo "1"
+        return 1
+    fi
+    #If the argument is greater than 1
+    if [ "$1" -gt 1 ]
+    then
+        #Calculate the two previous terms and print the nth term
+        echo "$(($(calc "$[$1-1]")) + $(($(calc "$[$1-2]"))))"
+    fi
+}
+
+#Program start
+#Get the input of the user
+read -p "Enter a number for the Fibonacci sequence: " number
+#Call the function
+echo $(calc "$number")
+#Program end
+```
+
+### Exerc
+
+Código extraído:
+#!/bin/bash
+#Author: Marcos Vinícius Brichta
+
+#Function for recursive calculation
+calc(){
+    #If the argument is 0, return 0
+    if [ "$1" -eq 0 ]
+    then
+        echo "0"
+        return 0
+    fi
+    #If the argument is 1, return 1
+    if [ "$1" -eq 1 ]
+    then
+        echo "1"
+        return 1
+    fi
+    #If the argument is greater than 1
+    if [ "$1" -gt 1 ]
+    then
+        #Calculate the two previous terms and print the nth term
+        echo "$(($(calc "$[$1-1]")) + $(($(calc "$[$1-2]"))))"
+    fi
+}
+
+#Program start
+#Get the input of the user
+read -p "Enter a number for the Fibonacci sequence: " number
+#Call the function
+echo $(calc "$number")
+#Program end
+
+Esperado: 8
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 1] Write a program in the language python that Use recursion to verify whether the following string is a valid symmetric encryption key (same forwards and backwards): A1b2B1a.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Explanation of the language python
+Python is an interpreted, object-oriented programming language with dynamic semantics. Its high-level built in data structures and data types, together with dynamic typing and dynamic binding, make it very attractive for rapid application development, especially in the area of system scripting.
+
+### Explanation of recursion
+Recursion is a method of solving a problem by defining the solution to the problem in terms of itself. Recursion is a simple solution to a complicated problem. The simplest way to define recursion is to define a solution to the problem in terms of a problem that is more complex than itself. For example, the sum of an array of integers is the sum of the integers in the array except for the first one, plus the first one. The sum of an array of integers, starting from index 1 is the sum of the integers in the array, starting from index 2, plus the first one.
+
+
+### Example in javaScript
+```js
+
+function isSymmetric(arr) {
+    // base case
+    if (arr.length === 0) {
+        return true;
+    }
+
+    // recursive case
+    if
+
+Código extraído:
+### Explanation of the language python
+Python is an interpreted, object-oriented programming language with dynamic semantics. Its high-level built in data structures and data types, together with dynamic typing and dynamic binding, make it very attractive for rapid application development, especially in the area of system scripting.
+
+### Explanation of recursion
+Recursion is a method of solving a problem by defining the solution to the problem in terms of itself. Recursion is a simple solution to a complicated problem. The simplest way to define recursion is to define a solution to the problem in terms of a problem that is more complex than itself. For example, the sum of an array of integers is the sum of the integers in the array except for the first one, plus the first one. The sum of an array of integers, starting from index 1 is the sum of the integers in the array, starting from index 2, plus the first one.
+
+
+### Example in javaScript
+```js
+
+function isSymmetric(arr) {
+    // base case
+    if (arr.length === 0) {
+        return true;
+    }
+
+    // recursive case
+    if
+
+Esperado: True
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 2] Write a program in the language python that Use recursion to verify whether the following string is a valid symmetric encryption key (same forwards and backwards): A1b2B1a.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Solution
+
+```python
+#!/usr/bin/env python
+
+def is_palindrome(string):
+    if len(string) == 1:
+        return True
+    elif len(string) == 2:
+        return string[0] == string[-1]
+    else:
+        return string[0] == string[-1] and is_palindrome(string[1:-1])
+    
+print is_palindrome('A1b2B1a')
+```
+
+
+## 17.6: Fibonacci with Recursion
+
+Write a program in the language python that Use recursion to print the first 20 numbers of the Fibonacci sequence.
+
+### Solution
+
+```python
+#!/usr/bin/env python
+
+def fib(n):
+    if n <= 1:
+        return n
+    return fib(n-1) + fib(n-2)
+
+for i in range(0,20):
+    print fib(i)
+```
+
+## 17.7: Palindrome with Recursion
+
+Write a
+
+Código extraído:
+#!/usr/bin/env python
+
+def is_palindrome(string):
+    if len(string) == 1:
+        return True
+    elif len(string) == 2:
+        return string[0] == string[-1]
+    else:
+        return string[0] == string[-1] and is_palindrome(string[1:-1])
+    
+print is_palindrome('A1b2B1a')
+
+Esperado: True
+Salida   : 
+
+================================================================================
+Lenguaje: python
+Prompt:
+[Try 3] Write a program in the language python that Use recursion to verify whether the following string is a valid symmetric encryption key (same forwards and backwards): A1b2B1a.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+### Hint
+```
+# for a valid string, the number of forward and backward characters should match
+# if the length of the string is 1, it is valid, otherwise:
+# check if the first and last character are the same, and 
+# if the string in between is a valid string (same forwards and backwards)
+# we can solve the problem with recursion.
+# let's try to build the algorithm in pseudo-code
+# 1. if the length of the string is 1, it is valid.
+# 2. if the length of the string is bigger than 1, we first check if 
+#    the first and last character are the same.
+# 3. check if the string in between is a valid string (same forwards and backwards).
+# 4. if the condition above is not met, it is not valid, return False.
+```
+
+### Code
+```
+# Python program for the above mentioned problem
+ 
+# Function to check if a string is symmetric or not
+def symmetric(str1):
+ 
+    # base case
+    if len(str1) == 1:
+
+Código extraído:
+### Hint
+```
+# for a valid string, the number of forward and backward characters should match
+# if the length of the string is 1, it is valid, otherwise:
+# check if the first and last character are the same, and 
+# if the string in between is a valid string (same forwards and backwards)
+# we can solve the problem with recursion.
+# let's try to build the algorithm in pseudo-code
+# 1. if the length of the string is 1, it is valid.
+# 2. if the length of the string is bigger than 1, we first check if 
+#    the first and last character are the same.
+# 3. check if the string in between is a valid string (same forwards and backwards).
+# 4. if the condition above is not met, it is not valid, return False.
+```
+
+### Code
+```
+# Python program for the above mentioned problem
+ 
+# Function to check if a string is symmetric or not
+def symmetric(str1):
+ 
+    # base case
+    if len(str1) == 1:
+
+Esperado: True
+Salida   : 
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 1] Write a program in the language c that Use recursion to verify whether the following string is a valid symmetric encryption key (same forwards and backwards): A1b2B1a.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+**Solution:**
+```c
+// C program to check if the string is symmetric
+#include <stdio.h>
+#include <string.h>
+
+int symmetric(char *key)
+{
+	int i = 0;
+	int len = strlen(key);
+	if(len%2 != 0)
+		return 0;
+	if(len == 2)
+		return 1;
+	return symmetric(key+1) && key[i] == key[len-1-i];
+}
+
+int main()
+{
+	char key[] = "A1b2B1a";
+	printf("Output: %d", symmetric(key));
+	return 0;
+}
+```
+
+**Note:**
+1. In this program I have used the function call stack to compute the answer. This is not the most efficient solution, but it is a good first step to understanding recursion.
+2. This problem can be solved in O(n) time.
+
+**Challenge:**
+1. Convert your program into a function that can return the number of valid symmetric keys in a given string
+
+Código extraído:
+// C program to check if the string is symmetric
+#include <stdio.h>
+#include <string.h>
+
+int symmetric(char *key)
+{
+	int i = 0;
+	int len = strlen(key);
+	if(len%2 != 0)
+		return 0;
+	if(len == 2)
+		return 1;
+	return symmetric(key+1) && key[i] == key[len-1-i];
+}
+
+int main()
+{
+	char key[] = "A1b2B1a";
+	printf("Output: %d", symmetric(key));
+	return 0;
+}
+
+Esperado: True
+Salida   : Output: 0
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 2] Write a program in the language c that Use recursion to verify whether the following string is a valid symmetric encryption key (same forwards and backwards): A1b2B1a.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+Input Format
+The program does not take any input.
+
+Constraints
+The program will be tested on Windows (10).
+Output Format
+The program will print only the final result.
+Sample Input
+
+Sample Output
+True
+
+*/
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+#define MAX 10
+
+int isValid(char* s) {
+    // Complete this function
+    if(strlen(s) > MAX){
+        return 0;
+    }
+    return 0;
+}
+
+int main() {
+    char s[MAX];
+    scanf("%s", s);
+    int result = isValid(s);
+    if(result)
+        printf("True\n");
+    else
+        printf("False\n");
+    return 0;
+}
+
+// Complete the isValid function below.
+
+int isValid(char* s) {
+    // Complete this function
+    if(strlen(s) > MAX){
+        return 0;
+    }
+    return 0;
+}
+
+int
+
+Código extraído:
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+#define MAX 10
+
+int isValid(char* s) {
+    // Complete this function
+    if(strlen(s) > MAX){
+        return 0;
+    }
+    return 0;
+}
+
+int main() {
+    char s[MAX];
+    scanf("%s", s);
+    int result = isValid(s);
+    if(result)
+        printf("True\n");
+    else
+        printf("False\n");
+    return 0;
+}
+
+// Complete the isValid function below.
+
+int isValid(char* s) {
+    // Complete this function
+    if(strlen(s) > MAX){
+        return 0;
+    }
+    return 0;
+}
+
+int
+
+Esperado: True
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.
+
+================================================================================
+Lenguaje: c
+Prompt:
+[Try 3] Write a program in the language c that Use recursion to verify whether the following string is a valid symmetric encryption key (same forwards and backwards): A1b2B1a.
+The program must print **only** the final result (no extra text, no explanations, no labels), and provide the following expected output: True.
+Finish your code right after the final output line. Do not add any additional text, comments, or tasks.
+
+Respuesta del modelo:
+## Approach
+The program first takes the string and checks if it is symmetric. If it is, then it will check if it is alphanumeric and convert it to lowercase. Then, the program checks if it has numbers and letters and if it is longer than 1 character. If all these conditions are true, it will check to see if the first and last characters are the same, the first and last second characters are the same, and so on.
+
+
+## Solution
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+bool isSymmetric(char string[], int len);
+
+int main()
+{
+	char str[] = "A1b2B1a";
+	int len = strlen(str);
+	printf("%d\n", isSymmetric(str, len));
+	
+	return 0;
+}
+
+bool isSymmetric(char string[], int len)
+{
+	bool result = false;
+	if (isSymmetricHelper(string, len))
+		result = true;
+	return result;
+}
+
+bool is
+
+Código extraído:
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+bool isSymmetric(char string[], int len);
+
+int main()
+{
+	char str[] = "A1b2B1a";
+	int len = strlen(str);
+	printf("%d\n", isSymmetric(str, len));
+	
+	return 0;
+}
+
+bool isSymmetric(char string[], int len)
+{
+	bool result = false;
+	if (isSymmetricHelper(string, len))
+		result = true;
+	return result;
+}
+
+bool is
+
+Esperado: True
+Salida   : Command '['gcc', 'codigo_gen.c', '-o', 'prog']' returned non-zero exit status 1.

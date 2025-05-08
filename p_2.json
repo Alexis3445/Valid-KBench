@@ -1,0 +1,19 @@
+{
+    "Algebraic": [
+        {
+            "description": "calculate the factorial of",
+            "input": 5,
+            "expected_output": "120"
+        },
+        {
+            "description": "calculate the sum of natural numbers up to",
+            "input": 10,
+            "expected_output": "55"
+        },
+        {
+            "description": "determine whether the number is prime",
+            "input": 17,
+            "expected_output": "True"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "Algebraicos": [
+      {
+        "task_id": "alg_001",
+        "category": "Algebraicos",
+        "description": "calcule el factorial de",
+        "input": 5,
+        "expected_output": "120",
+        "function_name": "calcule_func",
+        "test_code": "assert calcule_func(5) == '120'"
+      },
+      {
+        "task_id": "alg_002",
+        "category": "Algebraicos",
+        "description": "calcule la suma de los numeros naturales hasta el numero",
+        "input": 10,
+        "expected_output": "55",
+        "function_name": "calcule_func",
+        "test_code": "assert calcule_func(10) == '55'"
+      },
+      {
+        "task_id": "alg_003",
+        "category": "Algebraicos",
+        "description": "Determina si es primo el numero",
+        "input": 17,
+        "expected_output": "True",
+        "function_name": "determina_func",
+        "test_code": "assert determina_func(17) == 'True'"
+      }
+    ]
+  }
+  
